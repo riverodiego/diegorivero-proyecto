@@ -1,0 +1,51 @@
+/***************************/
+/*   HTML TODOS HEADERS    */
+/*     Aplica estilos      */
+/***************************/
+
+header {
+  border-bottom: 3px solid tomato;
+}
+
+/************************************/
+/*     EFECTO ANIMACION HEADER      */
+/*  parrafo bienvenida en el header */
+/************************************/
+
+header p {
+  margin: 5px 0 20px 0;
+  text-align: center;
+  background-color: rosybrown;
+  border: indigo 1px solid;
+  color: gold;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 140%;
+  font-weight: bold;
+  animation-name: saludo;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 6s;
+  animation-delay: 0s;
+}
+
+@keyframes saludo {
+  0% {
+    font-size: 60%;
+    opacity: 0;
+  }
+  2% {
+    font-size: 80%;
+  }
+  4% {
+    font-size: 100%;
+    background-color: red;
+  }
+  6% {
+    font-size: 120%;
+  }
+  100% {
+    opacity: 1;
+    font-size: 140%;
+    background-color: green;
+  }
+}

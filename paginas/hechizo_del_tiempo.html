@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Esta seccion te cuenta sobre la pelicula Hechizo del Tiempo, en la que encontrarás fotos, videos, banda sonora, detalles y la sinopsis"
+    />
+    <meta
+      name="keywords"
+      content="FOTOS, VIDEOS, SONIDO, SINOPSIS, HECHIZO DEL TIEMPO, RHAPSODY ON A THEME BY PAGANINI, BANDA SONORA"
+    />
+    <title>La Pelicula Hechizo del Tiempo</title>
+    <link href="../imagenes/favicon.gif" type="image/x-ico" rel="icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CDN en la Nube CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/estilos.css" />
+  </head>
+  <body>
+    <!-- ########################################################## -->
+    <!-- Encabezado con link redes sociales y buscador de peliculas -->
+    <!-- ########################################################## -->
+    <header id="arriba" class="gradienteRadial container-fluid">
+      <div class="row">
+        <!-- Logo de la pagina -->
+        <div class="col-12 col-md-2 col-lg-2 text-center">
+          <a href="../index.html">
+            <img src="../imagenes/logo.png" alt="logo de la pagina" />
+          </a>
+        </div>
+        <!-- Titulo de la pagina -->
+        <h1 class="col-md-6 col-lg-4">PelisClasicas.com</h1>
+        <aside class="col-md-4 col-lg-6">
+          <!-- iconos de redes sociales -->
+          <section class="row justify-content-end m-2">
+            <a href="./contactanos.html">
+              <img
+                src="../imagenes/correo.png"
+                alt="formulario de contacto"
+                class="rounded-lg m-1"
+              />
+            </a>
+            <a href="https://twitter.com/tweeter?lang=es" target="_blank">
+              <img
+                src="../imagenes/twiter.png"
+                alt="ir a twitter"
+                class="rounded-lg m-1"
+              />
+            </a>
+            <a href="https://ar.pinterest.com/" target="_blank">
+              <img
+                src="../imagenes/pinterest.png"
+                alt="ir a pinterest"
+                class="rounded-lg m-1"
+              />
+            </a>
+            <a href="https://www.instagram.com/?hl=es" target="_blank">
+              <img
+                src="../imagenes/instagram.png"
+                alt="ir a instagram"
+                class="rounded-lg m-1"
+              />
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+              <img
+                src="../imagenes/facebook.png"
+                alt="ir a facebook"
+                class="rounded-lg m-1"
+              />
+            </a>
+          </section>
+          <!-- buscardor de peliculas -->
+          <section class="row justify-content-end text-right mr-2">
+            <form action="">
+              <fieldset>
+                <input
+                  class="m-1"
+                  type="text"
+                  name="buscapeli"
+                  placeholder="Nombre de la Pelicula"
+                />
+                <input class="m-1" type="submit" value="Buscar" />
+              </fieldset>
+            </form>
+          </section>
+        </aside>
+      </div>
+      <!-- Mensaje bienvenida -->
+      <p class="row justify-content-center">
+        Bienvenidos a Nuestra Pagina de Peliculas Clasicas<br />
+        Si no la tenemos, avisanos y la buscamos por vos!!!
+      </p>
+    </header>
+    <!-- ############## -->
+    <!-- Menu principal -->
+    <!-- ############## -->
+    <nav class="row navbar navbar-expand-lg fondoMenu">
+      <a class="navbar-brand botonMenu ml-2" href="#">PelisClasicas.com</a>
+      <button
+        class="navbar-toggler mr-2"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav w-100">
+          <li class="nav-item active">
+            <a class="nav-link botonMenu" href="../index.html"
+              >Inicio <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link botonMenu" href="./paginas/top-5.html">Top 5</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link botonMenu" href="./paginas/ultima-semana.html"
+              >Ultima Semana</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link botonMenu" href="./paginas/novedades.html"
+              >Novedades</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle botonMenu"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Secciones
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="./lista-general.html"
+                >Lista General</a
+              >
+              <a class="dropdown-item" href="./pelicula1.html">Pelicula 1</a>
+              <a class="dropdown-item" href="./pelicula2.html">Pelicula 2</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="principal" class="row ml-2 mr-2">
+      <!-- ###################### -->
+      <!-- Menu lateral izquierdo -->
+      <!-- ###################### -->
+      <div id="menuIzquierdo" class="col-6 col-md-6 col-lg-2">
+        <h2>Buscar Pelicula Por</h2>
+        <form action="">
+          <fieldset>
+            <div>
+              <label for="genero">Genero</label>
+              <select id="genero" name="genero">
+                <option value="Todos">Todos</option>
+                <option value="accion">Acción</option>
+                <option value="aventura">Aventura</option>
+                <option value="animacion">Animación</option>
+                <option value="belico">Bélico</option>
+                <option value="cienciaficcion">Ciencia Ficción</option>
+                <option value="cinenegro">Cine Negro</option>
+                <option value="comedia">Comedia</option>
+                <option value="drama">Drama</option>
+                <option value="espionaje">Espionaje</option>
+                <option value="infantil">infantil</option>
+                <option value="musical">Musical</option>
+                <option value="policiaco">Policiaco</option>
+                <option value="romantica">Romántica</option>
+                <option value="suspenso">Suspenso</option>
+                <option value="terror">Terror</option>
+                <option value="thriller">Thriller</option>
+                <option value="western">Western</option>
+              </select>
+            </div>
+            <div>
+              <label for="idioma">Idioma</label>
+              <select id="idioma" name="idioma">
+                <option value="Todos">Todos</option>
+                <option value="espanol">Español</option>
+                <option value="latino">Latino</option>
+                <option value="vose">V.O.S.E.</option>
+                <option value="versionoriginal">Version Original</option>
+              </select>
+            </div>
+            <div>
+              <label for="decada">Decada</label>
+              <select id="decada" name="decada">
+                <option value="Todas">Todas</option>
+                <option value="1950">1950</option>
+                <option value="1960">1960</option>
+                <option value="1970">1970</option>
+                <option value="1980">1980</option>
+                <option value="1990">1990</option>
+                <option value="2000">2000</option>
+                <option value="2010">2010</option>
+                <option value="Actual">Actual</option>
+              </select>
+            </div>
+            <div>
+              <label for="calificacion">Calificacion</label>
+              <select id="calificacion" name="calificacion">
+                <option value="Todas">Todas</option>
+                <option value="1 estrella">1 Estrella</option>
+                <option value="2 estrellas">2 Estrellas</option>
+                <option value="3 estrellas">3 Estrellas</option>
+                <option value="4 estrellas">4 Estrellas</option>
+                <option value="5 estrellas">5 Estrellas</option>
+              </select>
+            </div>
+          </fieldset>
+          <div>
+            <input type="submit" value="Filtrar" />
+            <input type="reset" value="Limpiar" />
+          </div>
+        </form>
+      </div>
+      <main>
+        <div class="textoAlineadoDerecha"><a href="#pie">Ir abajo</a></div>
+        <section>
+          <h2>Seccion Pelicula 2</h2>
+          <!-- ##################### -->
+          <!-- Foto y datos pelicula -->
+          <!-- ##################### -->
+          <h2 class="tituloPeliculas">Hechizo del tiempo</h2>
+          <article class="textoAlineadoCentro">
+            <a
+              href="../imagenes/groundhog-day-100.png"
+              title="ver imagen original"
+              target="_blank"
+              >"<img
+                src="../imagenes/groundhog-day-50.png"
+                alt="imagen de pelicula hechizo del tiempo"
+            /></a>
+            <ul class="datosPelicula">
+              <li>Ano: 1993</li>
+              <li>Duracion: 101min</li>
+              <li>Pais: Estados Unidos</li>
+              <li>Direccion: Harold Ramis</li>
+              <li>Guion:</li>
+              <ul class="MargenIzqTexto negrita">
+                <li>Danny Rubin</li>
+                <li>Harold Ramis</li>
+              </ul>
+              <li>Protagonistas:</li>
+              <ul class="MargenIzqTexto negrita">
+                <li>Bill Murray (Phill)</li>
+                <li>Andie MacDowell (Rita)</li>
+                <li>Chris Elliott (Larry)</li>
+                <li>Stephen Tobolowsky (Ned)</li>
+                <li>Brian Doyle-Murray (Buster)</li>
+                <li>Marita Geraghty (Nancy)</li>
+              </ul>
+            </ul>
+          </article>
+          <!-- ################### -->
+          <!-- Trailer de Pelicula -->
+          <!-- ################### -->
+          <h2>Trailer de la pelicula</h2>
+          <article class="textoAlineadoCentro">
+            <iframe
+              width="964"
+              height="542"
+              src="https://www.youtube.com/embed/GncQtURdcE4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </article>
+          <!-- ######################## -->
+          <!-- Banda Sonora de Pelicula -->
+          <!-- ######################## -->
+          <h2>Banda Sonora Rhapsody on a theme by paganini</h2>
+          <article class="textoAlineadoCentro">
+            <audio controls>
+              <source
+                src="../audios/rhapsody-on-a-theme-by-paganini.ogg"
+                type="audio/ogg"
+              />
+              Tu navegador no soporta el audio
+            </audio>
+          </article>
+          <h2>Sinopsis</h2>
+          <article class="textoAlineadoCentro">
+            <p class="comentarioPelicula" style="width: auto">
+              Groundhog Day (Atrapado en el tiempo en España, El día de la
+              marmota en Chile, Argentina, México y Venezuela y Hechizo del
+              tiempo en el resto de Hispanoamérica) es una película de Cine
+              fantástico y alto contenido metafísico estadounidense de 1993
+              dirigida por Harold Ramis, y protagonizada por Bill Murray, Andie
+              MacDowell, y Chris Elliott. Fue escrita por Ramis y Danny Rubin,
+              basada en una historia de Rubin.​ Murray interpreta a Phil
+              Connors, un arrogante meteorólogo de la televisión de Pittsburgh
+              que, mientras cubre el evento anual del Día de la Marmota en
+              Punxsutawney, Pennsylvania, ese mismo día se encuentra atrapado en
+              un ciclo de tiempo, repitiendo el mismo día una y otra vez.
+              Después de caer en el hedonismo e intentar suicidarse en numerosas
+              ocasiones, comienza a reexaminar su vida y sus prioridades.
+            </p>
+          </article>
+        </section>
+      </main>
+      <!-- #################### -->
+      <!-- Menu lateral derecho -->
+      <!-- #################### -->
+      <aside id="menuDerecho" class="col-6 col-md-6 col-lg-4">
+        <div class="cajaMenuDerecho">
+          <h2>Suscribete al Newletter :)</h2>
+          <form action="">
+            <fieldset>
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Ejemplo@dominio.com"
+                />
+                <input type="submit" value="Enviar" />
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="cajaMenuDerecho">
+          <h2>Cual Peli NO encontraste?</h2>
+          <form action="">
+            <fieldset>
+              <div>
+                <input
+                  type="text"
+                  name="faltapeli"
+                  placeholder="Nombre de la pelicula"
+                />
+                <input type="submit" value="Enviar" />
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="cajaMenuDerecho">
+          <h2 id="sugeridaHoy">Sugerida Hoy</h2>
+          <img
+            id="imgSugeridaHoy"
+            src="../imagenes/ghostbuster-50.png"
+            alt="imagen de pelicula los cazafantasmas"
+          />
+          <h3 class="tituloPeliculas">Los Cazafantasmas</h3>
+        </div>
+      </aside>
+    </section>
+    <!-- ############# -->
+    <!-- Pie de Pagina -->
+    <!-- ############# -->
+    <footer id="pie" class="container-fluid">
+      <div id="pie1renglon" class="row">
+        <nav class="navbar navbar-expand-lg fondoMenu col-12">
+          <a class="navbar-brand botonMenu" href="#"
+            >PelisClasicas.com copyright 2021c</a
+          >
+          <ul class="navbar-nav w-100 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link botonMenu" href="./quienes-somos.html"
+                >Quienes Somos <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link botonMenu" href="./contactanos.html"
+                >Contactanos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link botonMenu" href="./ayuda.html">Ayuda</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="pie2renglon" class="row">
+        <ul class="col-12 text-center">
+          <li class="d-inline"><a href="#arriba">Ir arriba</a></li>
+          <li class="d-inline"><a href="../index.html">Volver al Inicio</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JS de BOOTSTRAP -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

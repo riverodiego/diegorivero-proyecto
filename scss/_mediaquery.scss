@@ -1,0 +1,21 @@
+//Alinea los botones del menu y el submenu
+@media only screen and (min-width: 992px) {
+  li.nav-item {
+    margin-left: 25px;
+  }
+  div.dropdown-menu {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  a.navbar-brand {
+    margin-bottom: 10px;
+  }
+  li.nav-item {
+    margin-bottom: 10px;
+  }
+  div.dropdown-menu {
+    margin-top: 25px;
+  }
+}

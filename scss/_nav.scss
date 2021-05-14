@@ -1,0 +1,75 @@
+/*probando codigo icono menu*/
+
+.homeMenu {
+  background-image: url(../imagenes/sprite-hs.png);
+  background-position: -74px -2px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-size: 160px;
+}
+
+.ultimaSemMenu {
+  background-image: url(../imagenes/sprite-hs.png);
+  background-position: -129px -2px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-size: 169px;
+}
+
+.botonMenu {
+  background-image: linear-gradient(#2b72cc, #2b4a97);
+  border: #262829 solid 1px;
+  border-radius: 10px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset,
+    0 1px 0 rgba(0, 0, 0, 0.8);
+  color: #fff;
+  float: left;
+  font-size: 1rem;
+  height: 1.5rem;
+  line-height: 13px;
+  padding: 0.2rem;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #1a1c1d;
+}
+
+.fondoMenu {
+  background-image: linear-gradient(#262626, #121212);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-top: 1px solid transparent;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  margin-bottom: 25px;
+}
+
+nav a:hover {
+  color: orange;
+  background-image: linear-gradient(#2b4a97, #2b72cc);
+}
+
+.navbar-toggler {
+  border: 1px solid white;
+  background-image: linear-gradient(#2b72cc, #2b4a97);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+div.dropdown-menu {
+  background-image: linear-gradient(#2b72cc, #2b4a97);
+  width: max-content;
+  a {
+    color: #fff;
+    font-size: 1rem;
+    height: 1.5rem;
+    line-height: 13px;
+    padding: 0.2rem;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #1a1c1d;
+  }
+  a:hover {
+    color: orange;
+    background-image: linear-gradient(#2b4a97, #2b72cc);
+  }
+}

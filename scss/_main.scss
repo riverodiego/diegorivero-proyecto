@@ -1,0 +1,64 @@
+//************************************/
+//*        HTML: INDEX               */
+//*      Formatea el MAIN            */
+//************************************/
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+main h2 {
+  margin: 5px;
+  text-align: center;
+}
+
+main div.cartelera {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: black;
+}
+
+main section article {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  margin: 5px;
+  border: purple 3px solid;
+  justify-content: center;
+}
+
+main section h3,
+.card-title,
+.tituloPeliculas {
+  border: violet 3px solid;
+  background-color: purple;
+  color: white;
+  text-align: center;
+}
+
+main section h4 {
+  margin: 10px;
+}
+
+.comentarioPelicula {
+  flex: 1;
+  font-size: medium;
+  line-height: 2em;
+  padding: 5px;
+  background-color: rgb(240, 219, 192);
+}
+
+.comentarioPelicula__borde {
+  border: darkorange 2px solid;
+  border-radius: 3px;
+}
+
+.comentarioPelicula__gradiante {
+  background-color: rgb(241, 210, 172);
+  background-image: linear-gradient(
+    315deg,
+    rgb(236, 143, 29) 0%,
+    rgb(243, 227, 208) 75%
+  );
+}

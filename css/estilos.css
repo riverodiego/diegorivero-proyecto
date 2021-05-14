@@ -1,0 +1,428 @@
+/************************/
+/*APLICACIONES GENERICAS*/
+/************************/
+body {
+  background-color: #cccccc; }
+
+h1,
+h2 {
+  color: cornflowerblue;
+  -webkit-text-stroke: 1px black;
+  font-family: "RocknRoll One", sans-serif;
+  align-self: center;
+  border-radius: 3em;
+  border: 1px solid white;
+  text-align: center;
+  font-size: 1.5rem; }
+
+h2.subTitulo {
+  border-radius: 1em 1em 0 0;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: Century Gothic, Arial, Verdana, sans-serif; }
+
+ul {
+  list-style: none; }
+  ul li a {
+    text-decoration: none; }
+
+p {
+  color: #3b3a3a;
+  font-family: "Libre Baskerville", serif; }
+
+p.comentarioBreve {
+  color: darkmagenta;
+  background-color: #ebd9e2;
+  border-radius: 0 0 0.5rem 0.5rem; }
+
+select {
+  background: none repeat scroll 0 0 #eee2e2;
+  border: 1px solid #bbb;
+  border-radius: 4px; }
+
+.fontCeleste {
+  color: cornflowerblue;
+  -webkit-text-stroke: 1px black;
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 1.2rem;
+  margin-left: 20px; }
+  .fontCeleste a:hover {
+    color: orange;
+    text-decoration: none; }
+
+.boton {
+  font-family: "Open Sans", sans-serif;
+  border-radius: 3px;
+  background-color: #4848fd; }
+  .boton a {
+    color: white;
+    text-decoration: none; }
+
+button:hover {
+  background-color: blue; }
+
+/***************************/
+/*   CLASES GRADIENTES     */
+/*                         */
+/***************************/
+.gradienteLineal {
+  background-color: #2f4353;
+  background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 75%); }
+
+.gradienteRadial {
+  background-color: #2f4353;
+  background-image: radial-gradient(#d2ccc4 0%, #2f4353 74%); }
+
+.gradienteLinealCaja {
+  background-image: linear-gradient(#2b72cc, #2b4a97); }
+
+section.encuadreTituloConFoto:hover {
+  background-image: linear-gradient(315deg, #bf033b 0%, #ffc719 74%);
+  border: 3px solid red; }
+
+section.encuadreTituloConFoto a {
+  text-decoration: none; }
+
+section.encuadreTituloConFoto h3:hover {
+  background-color: blue; }
+
+section.encuadreTituloConFoto img:hover {
+  padding: 0;
+  transform: rotate(1.5deg); }
+
+img#imgSugeridaHoy {
+  background-color: red;
+  position: relative;
+  animation-name: sugerida;
+  animation-duration: 4s; }
+
+@keyframes sugerida {
+  0% {
+    right: 0px;
+    top: 0px; }
+  25% {
+    right: 200px;
+    top: 0px; }
+  50% {
+    right: 200px;
+    top: 200px; }
+  75% {
+    right: 0px;
+    top: 200px; }
+  100% {
+    right: 0px;
+    top: 0px; } }
+
+/***************************/
+/*   HTML TODOS HEADERS    */
+/*     Aplica estilos      */
+/***************************/
+header {
+  border-bottom: 3px solid tomato; }
+
+/************************************/
+/*     EFECTO ANIMACION HEADER      */
+/*  parrafo bienvenida en el header */
+/************************************/
+header p {
+  margin: 5px 0 20px 0;
+  text-align: center;
+  background-color: rosybrown;
+  border: indigo 1px solid;
+  color: gold;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 140%;
+  font-weight: bold;
+  animation-name: saludo;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 6s;
+  animation-delay: 0s; }
+
+@keyframes saludo {
+  0% {
+    font-size: 60%;
+    opacity: 0; }
+  2% {
+    font-size: 80%; }
+  4% {
+    font-size: 100%;
+    background-color: red; }
+  6% {
+    font-size: 120%; }
+  100% {
+    opacity: 1;
+    font-size: 140%;
+    background-color: green; } }
+
+/*probando codigo icono menu*/
+.homeMenu {
+  background-image: url(../imagenes/sprite-hs.png);
+  background-position: -74px -2px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-size: 160px; }
+
+.ultimaSemMenu {
+  background-image: url(../imagenes/sprite-hs.png);
+  background-position: -129px -2px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-size: 169px; }
+
+.botonMenu {
+  background-image: linear-gradient(#2b72cc, #2b4a97);
+  border: #262829 solid 1px;
+  border-radius: 10px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 0 rgba(0, 0, 0, 0.8);
+  color: #fff;
+  float: left;
+  font-size: 1rem;
+  height: 1.5rem;
+  line-height: 13px;
+  padding: 0.2rem;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #1a1c1d; }
+
+.fondoMenu {
+  background-image: linear-gradient(#262626, #121212);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-top: 1px solid transparent;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  margin-bottom: 25px; }
+
+nav a:hover {
+  color: orange;
+  background-image: linear-gradient(#2b4a97, #2b72cc); }
+
+.navbar-toggler {
+  border: 1px solid white;
+  background-image: linear-gradient(#2b72cc, #2b4a97); }
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
+div.dropdown-menu {
+  background-image: linear-gradient(#2b72cc, #2b4a97);
+  width: max-content; }
+  div.dropdown-menu a {
+    color: #fff;
+    font-size: 1rem;
+    height: 1.5rem;
+    line-height: 13px;
+    padding: 0.2rem;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #1a1c1d; }
+  div.dropdown-menu a:hover {
+    color: orange;
+    background-image: linear-gradient(#2b4a97, #2b72cc); }
+
+#menuIzquierdo {
+  background-color: black;
+  border: purple 3px solid;
+  margin: 20px 0;
+  padding: 10px 0;
+  text-align: center;
+  align-self: center; }
+
+div.cajaMenuIzquierdo {
+  align-self: center;
+  border-radius: 1.5em;
+  border: 1px solid white;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: burlywood;
+  padding-bottom: 20px;
+  margin: 20px; }
+
+#menuIzquierdo form fieldset {
+  padding: 5px; }
+
+#menuIzquierdo form div {
+  margin: 5px 5px 0 5px; }
+
+/*Unifica los menues laterales a la izquierda*/
+#unificaMenuLateral {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: space-around;
+  margin-top: 100px;
+  margin-left: 2px; }
+
+main {
+  display: flex;
+  flex-flow: column nowrap; }
+
+main h2 {
+  margin: 5px;
+  text-align: center; }
+
+main div.cartelera {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: black; }
+
+main section article {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  margin: 5px;
+  border: purple 3px solid;
+  justify-content: center; }
+
+main section h3,
+.card-title,
+.tituloPeliculas {
+  border: violet 3px solid;
+  background-color: purple;
+  color: white;
+  text-align: center; }
+
+main section h4 {
+  margin: 10px; }
+
+.comentarioPelicula {
+  flex: 1;
+  font-size: medium;
+  line-height: 2em;
+  padding: 5px;
+  background-color: #f0dbc0; }
+
+.comentarioPelicula__borde {
+  border: darkorange 2px solid;
+  border-radius: 3px; }
+
+.comentarioPelicula__gradiante {
+  background-color: #f1d2ac;
+  background-image: linear-gradient(315deg, #ec8f1d 0%, #f3e3d0 75%); }
+
+#menuDerecho {
+  background-color: black;
+  border: purple 3px solid;
+  margin-top: 100px;
+  padding: 10px 0;
+  text-align: center;
+  align-self: center; }
+
+div.cajaMenuDerecho {
+  align-self: center;
+  border-radius: 1.5em;
+  border: 1px solid white;
+  text-align: center;
+  font-size: 1rem;
+  background-color: burlywood;
+  padding-bottom: 20px;
+  margin: 20px; }
+  div.cajaMenuDerecho input {
+    width: 90%; }
+
+#sugeridaHoy {
+  color: deeppink;
+  -webkit-text-stroke: 1px greenyellow;
+  background-color: #3a3a3a;
+  margin-bottom: 10px; }
+
+/***************************/
+/*   HTML TODOS FOOTERS    */
+/*  Aplica estilos LISTA   */
+/***************************/
+footer {
+  border-top: 3px solid tomato;
+  padding: 5px;
+  background: linear-gradient(90deg, #000, #555252); }
+
+table {
+  border: 3px solid;
+  margin: 20px 0; }
+
+th {
+  color: white;
+  background-color: slategray;
+  border: 1px solid;
+  text-align: center; }
+
+td {
+  background-color: white;
+  border: 1px solid;
+  text-align: center;
+  width: auto;
+  height: auto; }
+
+td ul {
+  list-style: none;
+  text-align: left; }
+
+td.listaActores ul li {
+  width: auto; }
+
+@media only screen and (min-width: 992px) {
+  li.nav-item {
+    margin-left: 25px; }
+  div.dropdown-menu {
+    margin-top: 5px; } }
+
+@media only screen and (max-width: 991.98px) {
+  a.navbar-brand {
+    margin-bottom: 10px; }
+  li.nav-item {
+    margin-bottom: 10px; }
+  div.dropdown-menu {
+    margin-top: 25px; } }
+
+/********************************************/
+/* FORMATO A TITULOS Y DETALLES DE PELICULAS*/
+/********************************************/
+.tituloPeliculas {
+  color: #f8d6dc;
+  font-size: 120%;
+  font-weight: 400; }
+
+.tituloPeliculas--azul {
+  color: blue; }
+
+.fondoTituloPel {
+  background-color: #ebd9e2;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding-top: 10px;
+  margin-bottom: 0; }
+
+/*da formato al texto del detalle de las peliculas*/
+.datosPelicula {
+  color: steelblue;
+  font-family: "Saira Extra Condensed";
+  background-color: #c3e4f1;
+  padding: 5px; }
+
+.datosPelicula__borde {
+  border: darkblue 2px solid;
+  border-radius: 3px; }
+
+/*****************************************/
+/* HTML: TOP 5 ULTIMA SEMANA y NOVEDADES */
+/*              Aplica estilos           */
+/*****************************************/
+.encuadreTituloConFoto {
+  align-self: center;
+  width: 250px;
+  text-align: center;
+  border: 3px dotted red;
+  background-color: thistle;
+  padding: 3px;
+  margin: 3px; }
+
+/************************************/
+/*        HTML: ULTIMA SEMANA       */
+/*      Formatea aplicando FLEX     */
+/************************************/
+/*le doy un orden primero y que crezca 
+  para destacar*/
+#USNro2 {
+  flex-grow: 2;
+  order: -1;
+  background-color: indigo;
+  border: gold 5px dotted; }

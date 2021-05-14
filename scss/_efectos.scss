@@ -1,0 +1,52 @@
+//****************************/
+//*   EFECTOS TRANSICION     */
+//*Al seleccionar la pelicula*/
+//****************************/
+
+section.encuadreTituloConFoto:hover {
+  background-image: linear-gradient(315deg, #bf033b 0%, #ffc719 74%);
+  border: 3px solid red;
+}
+
+section.encuadreTituloConFoto a {
+  text-decoration: none;
+}
+
+section.encuadreTituloConFoto h3:hover {
+  background-color: blue;
+}
+
+section.encuadreTituloConFoto img:hover {
+  padding: 0;
+  transform: rotate(1.5deg);
+}
+
+//****************************/
+//*   EFECTOS TRASLACION     */
+//*En la imagen sugerida hoy */
+//****************************/
+
+img#imgSugeridaHoy {
+  background-color: red;
+  position: relative;
+  animation-name: sugerida;
+  animation-duration: 4s;
+}
+
+//simplifico el Keyframe
+$coordenadasxy: (0px 0px, 200px 0px, 200px 200px, 0px 200px, 0px 0px);
+@mixin mover($rig, $top) {
+  right: $rig;
+  top: $top;
+}
+@keyframes sugerida {
+  @for $i from 0 through 4 {
+    #{$i*25%} {
+      $interm: nth($coordenadasxy, $i + 1); //extrae el par variable
+      @include mover(
+        nth($interm, 1),
+        nth($interm, 2)
+      ); //extrae valor 1 y valor 2
+    }
+  }
+}
