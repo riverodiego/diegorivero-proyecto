@@ -16,22 +16,6 @@
     <title>Peliculas Clasicas para Todos</title>
     <link href="./imagenes/favicon.gif" type="image/x-ico" rel="icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
     <!-- Bootstrap CDN en la Nube CSS -->
     <link
       rel="stylesheet"
@@ -50,11 +34,11 @@
         <!-- Logo de la pagina -->
         <div class="col-12 col-md-2 col-lg-2 text-center">
           <a href="./index.html">
-            <img src="./imagenes/logo.png" alt="logo de la pagina" />
+            <img id="logo" src="./imagenes/logo.png" alt="logo de la pagina" />
           </a>
         </div>
         <!-- Titulo de la pagina -->
-        <h1 class="col-md-6 col-lg-4">PelisClasicas.com</h1>
+        <h1 id="titulo" class="col-md-6 col-lg-4">PelisClasicas.com</h1>
         <aside class="col-md-4 col-lg-6">
           <!-- iconos de redes sociales -->
           <section class="row justify-content-end m-2">
@@ -119,7 +103,7 @@
     <!-- ############## -->
     <!-- Menu principal -->
     <!-- ############## -->
-    <nav class="row navbar navbar-expand-lg fondoMenu">
+    <nav class="container-fluid navbar navbar-expand-lg fondoMenu">
       <a class="navbar-brand botonMenu ml-2" href="#">PelisClasicas.com</a>
       <button
         class="navbar-toggler mr-2"
@@ -133,7 +117,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav w-100">
+        <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link botonMenu" href="./index.html">
               <span class="homeMenu"></span>
@@ -183,7 +167,7 @@
     <!-- ################################# -->
     <!-- Carrousel El mas copado del mundo -->
     <!-- ################################# -->
-    <section class="container-fluid justify-content-center w-75 h-50">
+    <section class="container-fluid w-50 h-25">
       <div
         id="carouselExampleInterval"
         class="row carousel slide"
@@ -202,9 +186,6 @@
                 <div class="card-body">
                   <h5 class="card-title rounded">La Guerra de las Galaxias</h5>
                   <p class="card-text">Un clasico film de George Lucas...</p>
-                  <p class="card-text">
-                    <small class="text-muted">Last updated 2 mins ago</small>
-                  </p>
                 </div>
               </div>
               <div class="card">
@@ -217,9 +198,6 @@
                   <h5 class="card-title rounded">Baila Conmigo</h5>
                   <p class="card-text">
                     Una pelicula de baile y risas que no te puedes perder...
-                  </p>
-                  <p class="card-text">
-                    <small class="text-muted">Last updated 4 mins ago</small>
                   </p>
                 </div>
               </div>
@@ -235,9 +213,6 @@
                   </h5>
                   <p class="card-text">
                     Un suspenso que mantiene atrapado hasta el ultimo momento...
-                  </p>
-                  <p class="card-text">
-                    <small class="text-muted">Last updated 5 mins ago</small>
                   </p>
                 </div>
               </div>
@@ -255,9 +230,6 @@
                 <div class="card-body">
                   <h5 class="card-title rounded">La Guerra de las Galaxias</h5>
                   <p class="card-text">Un clasico film de George Lucas...</p>
-                  <p class="card-text">
-                    <small class="text-muted">Last updated 2 mins ago</small>
-                  </p>
                 </div>
               </div>
               <div class="card">
@@ -270,9 +242,6 @@
                   <h5 class="card-title rounded">Baila Conmigo</h5>
                   <p class="card-text">
                     Una pelicula de baile y risas que no te puedes perder...
-                  </p>
-                  <p class="card-text">
-                    <small class="text-muted">Last updated 4 mins ago</small>
                   </p>
                 </div>
               </div>
@@ -288,9 +257,6 @@
                   </h5>
                   <p class="card-text">
                     Un suspenso que mantiene atrapado hasta el ultimo momento...
-                  </p>
-                  <p class="card-text">
-                    <small class="text-muted">Last updated 5 mins ago</small>
                   </p>
                 </div>
               </div>
@@ -308,9 +274,6 @@
                 <div class="card-body">
                   <h5 class="card-title rounded">La Guerra de las Galaxias</h5>
                   <p class="card-text">Un clasico film de George Lucas...</p>
-                  <p class="card-text">
-                    <small class="text-muted">Last updated 2 mins ago</small>
-                  </p>
                 </div>
               </div>
               <div class="card">
@@ -323,9 +286,6 @@
                   <h5 class="card-title rounded">Baila Conmigo</h5>
                   <p class="card-text">
                     Una pelicula de baile y risas que no te puedes perder...
-                  </p>
-                  <p class="card-text">
-                    <small class="text-muted">Last updated 4 mins ago</small>
                   </p>
                 </div>
               </div>
@@ -341,9 +301,6 @@
                   </h5>
                   <p class="card-text">
                     Un suspenso que mantiene atrapado hasta el ultimo momento...
-                  </p>
-                  <p class="card-text">
-                    <small class="text-muted">Last updated 5 mins ago</small>
                   </p>
                 </div>
               </div>
@@ -371,275 +328,141 @@
       </div>
     </section>
     <section id="principal" class="row ml-2 mr-2">
-      <!-- ###################### -->
-      <!-- Menu lateral izquierdo -->
-      <!-- ###################### -->
-      <div id="menuIzquierdo" class="col-6 col-md-6 col-lg-2">
-        <div class="cajaMenuDerecho">
-          <h2 class="subTitulo gradienteLinealCaja">Buscar Pelicula Por</h2>
-          <form action="">
-            <fieldset>
-              <div>
-                <label class="d-block" for="genero">Genero</label>
-                <select id="genero" name="genero">
-                  <option value="Todos">Todos</option>
-                  <option value="accion">Acción</option>
-                  <option value="aventura">Aventura</option>
-                  <option value="animacion">Animación</option>
-                  <option value="belico">Bélico</option>
-                  <option value="cienciaficcion">Ciencia Ficción</option>
-                  <option value="cinenegro">Cine Negro</option>
-                  <option value="comedia">Comedia</option>
-                  <option value="drama">Drama</option>
-                  <option value="espionaje">Espionaje</option>
-                  <option value="infantil">infantil</option>
-                  <option value="musical">Musical</option>
-                  <option value="policiaco">Policiaco</option>
-                  <option value="romantica">Romántica</option>
-                  <option value="suspenso">Suspenso</option>
-                  <option value="terror">Terror</option>
-                  <option value="thriller">Thriller</option>
-                  <option value="western">Western</option>
-                </select>
-              </div>
-              <div>
-                <label class="d-block" for="idioma">Idioma</label>
-                <select id="idioma" name="idioma">
-                  <option value="Todos">Todos</option>
-                  <option value="espanol">Español</option>
-                  <option value="latino">Latino</option>
-                  <option value="vose">V.O.S.E.</option>
-                  <option value="versionoriginal">Version Original</option>
-                </select>
-              </div>
-              <div>
-                <label class="d-block" for="decada">Decada</label>
-                <select id="decada" name="decada">
-                  <option value="Todas">Todas</option>
-                  <option value="1950">1950</option>
-                  <option value="1960">1960</option>
-                  <option value="1970">1970</option>
-                  <option value="1980">1980</option>
-                  <option value="1990">1990</option>
-                  <option value="2000">2000</option>
-                  <option value="2010">2010</option>
-                  <option value="Actual">Actual</option>
-                </select>
-              </div>
-              <div>
-                <label class="d-block" for="calificacion">Calificacion</label>
-                <select id="calificacion" name="calificacion">
-                  <option value="Todas">Todas</option>
-                  <option value="1 estrella">1 Estrella</option>
-                  <option value="2 estrellas">2 Estrellas</option>
-                  <option value="3 estrellas">3 Estrellas</option>
-                  <option value="4 estrellas">4 Estrellas</option>
-                  <option value="5 estrellas">5 Estrellas</option>
-                </select>
-              </div>
-            </fieldset>
-            <div>
-              <input type="submit" value="Filtrar" />
-              <input type="reset" value="Limpiar" />
-            </div>
-          </form>
-        </div>
-      </div>
-      <!-- ##################### -->
-      <!-- Seccion central MAIN -->
-      <!-- ##################### -->
-      <main class="col-12 col-md-12 col-lg-6">
-        <div class="text-right fontCeleste"><a href="#pie">Ir abajo</a></div>
-        <h2>Cartelera Principal</h2>
-        <section>
-          <h3>BeetleJuice</h3>
-          <article>
-            <img
-              src="./imagenes/beetlejuice-50.png"
-              alt="imagen de pelicula
-            beetlejuice"
-              class="rounded"
-            />
-            <ul class="datosPelicula datosPelicula__borde">
-              <li>Ano: 1988</li>
-              <li>Duracion: 92min</li>
-              <li>Pais: Estados Unidos</li>
-              <li>Direccion: Tim Burton</li>
-              <li>Guion:</li>
-              <ul class="ml-3 font-weight-bold">
-                <li>Michael McDowell</li>
-                <li>Warren Skaaren</li>
-              </ul>
-              <li>Protagonistas:</li>
-              <ul class="ml-3 font-weight-bold">
-                <li>Alec Baldwin</li>
-                <li>Geena Davis</li>
-                <li>Jeffrey Jones</li>
-                <li>Catalina O'Hara</li>
-                <li>Winona Ryder</li>
-                <li>Michael Keaton</li>
-              </ul>
-            </ul>
-            <aside
-              class="
-                comentarioPelicula
-                comentarioPelicula__borde
-                comentarioPelicula__gradiante
-              "
-            >
-              <h4>Sinopsis</h4>
-              <p>
-                <button
-                  class="btn btn-primary"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseExample1"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
-                  Mostrar
-                </button>
-              </p>
-              <div class="collapse" id="collapseExample1">
-                <div class="card card-body">
-                  <p>
-                    Beetlejuice (titulada Bitelchus en España) es una película
-                    estadounidense dirigida por Tim Burton y estrenada en 1988.​
-                    Es una comedia de terror, que mezcla los géneros del humor e
-                    historia de fantasmas y está protagonizada por Beetlejuice,
-                    un personaje inventado por Burton. La película dio lugar a
-                    una serie de televisión de animación que el mismo Burton
-                    produjo.<br />
-                    Beetlejuice es un difunto que vive en el no mundo...
-                    <button>
-                      <a href="./paginas/beetlejuice.html">Mas info</a>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </aside>
-          </article>
-          <h3>Hechizo del tiempo</h3>
-          <article>
-            <img
-              src="./imagenes/groundhog-day-50.png"
-              alt="imagen de pelicula hechizo del tiempo"
-              class="img-fluid"
-            />
-            <ul class="datosPelicula datosPelicula__borde">
-              <li>Ano: 1993</li>
-              <li>Duracion: 101min</li>
-              <li>Pais: Estados Unidos</li>
-              <li>Direccion: Harold Ramis</li>
-              <li>Guion:</li>
-              <ul class="ml-3 font-weight-bold">
-                <li>Danny Rubin</li>
-                <li>Harold Ramis</li>
-              </ul>
-              <li>Protagonistas:</li>
-              <ul class="ml-3 font-weight-bold">
-                <li>Bill Murray (Phill)</li>
-                <li>Andie MacDowell (Rita)</li>
-                <li>Chris Elliott (Larry)</li>
-                <li>Stephen Tobolowsky (Ned)</li>
-                <li>Brian Doyle-Murray (Buster)</li>
-                <li>Marita Geraghty (Nancy)</li>
-              </ul>
-            </ul>
-            <aside
-              class="
-                comentarioPelicula
-                comentarioPelicula__borde
-                comentarioPelicula__gradiante
-              "
-            >
-              <h4>Sinopsis</h4>
-              <p>
-                <button
-                  class="btn btn-primary"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseExample2"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                >
-                  Mostrar
-                </button>
-              </p>
-              <div class="collapse" id="collapseExample2">
-                <div class="card card-body">
-                  <p>
-                    Groundhog Day (Atrapado en el tiempo en España, El día de la
-                    marmota en Chile, Argentina, México y Venezuela y Hechizo
-                    del tiempo en el resto de Hispanoamérica) es una película de
-                    Cine fantástico y alto contenido metafísico estadounidense
-                    de 1993 dirigida por Harold Ramis, y protagonizada por Bill
-                    Murray, Andie MacDowell, y Chris Elliott. Fue escrita por
-                    Ramis y Danny Rubin, basada en una historia de Rubin.​
-                    Murray interpreta a Phil Connors, un arrogante
-                    meteorólogo...
-                    <button>
-                      <a href="./paginas/hechizo_del_tiempo.html">Mas info</a>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </aside>
-          </article>
-        </section>
-      </main>
-      <!-- #################### -->
-      <!-- Menu lateral derecho -->
-      <!-- #################### -->
-      <aside id="menuDerecho" class="col-6 col-md-6 col-lg-2">
-        <div class="cajaMenuDerecho">
-          <h2 class="subTitulo gradienteLinealCaja">
-            Suscribete al Newletter :)
-          </h2>
-          <form action="">
-            <fieldset>
-              <div>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Ejemplo@dominio.com"
-                />
-                <input type="submit" value="Enviar" />
-              </div>
-            </fieldset>
-          </form>
-        </div>
-        <div class="cajaMenuDerecho">
-          <h2 class="subTitulo gradienteLinealCaja">
-            Cual Peli NO encontraste?
-          </h2>
-          <form action="">
-            <fieldset>
-              <div>
-                <input
-                  type="text"
-                  name="faltapeli"
-                  placeholder="Nombre de la pelicula"
-                />
-                <input type="submit" value="Enviar" />
-              </div>
-            </fieldset>
-          </form>
-        </div>
-        <div class="cajaMenuDerecho">
-          <h2 id="sugeridaHoy" class="subTitulo gradienteLinealCaja">
-            Sugerida Hoy
-          </h2>
+    <!-- ##################### -->
+    <!-- Seccion central MAIN -->
+    <!-- ##################### -->
+    <main class="container-fluid w-75">
+      <div class="text-right fontCeleste"><a href="#pie">Ir abajo</a></div>
+      <h2>Cartelera Principal</h2>
+      <section>
+        <h3>BeetleJuice</h3>
+        <article>
           <img
-            id="imgSugeridaHoy"
-            class="img-fluid"
-            src="./imagenes/ghostbuster-50.png"
-            alt="imagen de pelicula los cazafantasmas"
+            src="./imagenes/beetlejuice-50.png"
+            alt="imagen de pelicula
+          beetlejuice"
+            class="rounded"
           />
-          <h3 class="tituloPeliculas">Los Cazafantasmas</h3>
-        </div>
-      </aside>
-    </section>
+          <ul class="datosPelicula">
+            <li>Ano: 1988</li>
+            <li>Duracion: 92min</li>
+            <li>Pais: Estados Unidos</li>
+            <li>Direccion: Tim Burton</li>
+            <li>Guion:</li>
+            <ul class="ml-2">
+              <li>Michael McDowell</li>
+              <li>Warren Skaaren</li>
+            </ul>
+            <li>Protagonistas:</li>
+            <ul class="ml-2">
+              <li>Alec Baldwin</li>
+              <li>Geena Davis</li>
+              <li>Jeffrey Jones</li>
+              <li>Catalina O'Hara</li>
+              <li>Winona Ryder</li>
+              <li>Michael Keaton</li>
+            </ul>
+          </ul>
+          <aside
+            class="comentarioPelicula"
+          >
+            <h4>Sinopsis</h4>
+            <p>
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseExample1"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Mostrar
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample1">
+              <div class="card card-body">
+                <p>
+                  Beetlejuice (titulada Bitelchus en España) es una película
+                  estadounidense dirigida por Tim Burton y estrenada en 1988.​
+                  Es una comedia de terror, que mezcla los géneros del humor e
+                  historia de fantasmas y está protagonizada por Beetlejuice,
+                  un personaje inventado por Burton. La película dio lugar a
+                  una serie de televisión de animación que el mismo Burton
+                  produjo.<br />
+                  Beetlejuice es un difunto que vive en el no mundo...
+                  <button>
+                    <a href="./paginas/beetlejuice.html">Mas info</a>
+                  </button>
+                </p>
+              </div>
+            </div>
+          </aside>
+        </article>
+        <h3>Hechizo del tiempo</h3>
+        <article>
+          <img
+            src="./imagenes/groundhog-day-50.png"
+            alt="imagen de pelicula hechizo del tiempo"
+            class="rounded"
+          />
+          <ul class="datosPelicula">
+            <li>Ano: 1993</li>
+            <li>Duracion: 101min</li>
+            <li>Pais: Estados Unidos</li>
+            <li>Direccion: Harold Ramis</li>
+            <li>Guion:</li>
+            <ul class="ml-2">
+              <li>Danny Rubin</li>
+              <li>Harold Ramis</li>
+            </ul>
+            <li>Protagonistas:</li>
+            <ul class="ml-2">
+              <li>Bill Murray (Phill)</li>
+              <li>Andie MacDowell (Rita)</li>
+              <li>Chris Elliott (Larry)</li>
+              <li>Stephen Tobolowsky (Ned)</li>
+              <li>Brian Doyle-Murray (Buster)</li>
+              <li>Marita Geraghty (Nancy)</li>
+            </ul>
+          </ul>
+          <aside
+            class="comentarioPelicula"
+          >
+            <h4>Sinopsis</h4>
+            <p>
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseExample2"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Mostrar
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample2">
+              <div class="card card-body">
+                <p>
+                  Groundhog Day (Atrapado en el tiempo en España, El día de la
+                  marmota en Chile, Argentina, México y Venezuela y Hechizo
+                  del tiempo en el resto de Hispanoamérica) es una película de
+                  Cine fantástico y alto contenido metafísico estadounidense
+                  de 1993 dirigida por Harold Ramis, y protagonizada por Bill
+                  Murray, Andie MacDowell, y Chris Elliott. Fue escrita por
+                  Ramis y Danny Rubin, basada en una historia de Rubin.​
+                  Murray interpreta a Phil Connors, un arrogante
+                  meteorólogo...
+                  <button>
+                    <a href="./paginas/hechizo_del_tiempo.html">Mas info</a>
+                  </button>
+                </p>
+              </div>
+            </div>
+          </aside>
+        </article>
+      </section>
+    </main>
     <!-- ############# -->
     <!-- Pie de Pagina -->
     <!-- ############# -->

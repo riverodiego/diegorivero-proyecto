@@ -12,10 +12,15 @@ header {
 /*  parrafo bienvenida en el header */
 /************************************/
 
+#logo {
+  width: 106px;
+  height: 110px;
+}
+
 header p {
   margin: 5px 0 20px 0;
   text-align: center;
-  background-color: rosybrown;
+  background-color: green;
   border: indigo 1px solid;
   color: gold;
   font-family: "Courier New", Courier, monospace;

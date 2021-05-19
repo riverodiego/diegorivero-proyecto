@@ -1,6 +1,11 @@
 /************************/
 /*APLICACIONES GENERICAS*/
 /************************/
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 body {
   background-color: #cccccc; }
 
@@ -13,7 +18,8 @@ h2 {
   border-radius: 3em;
   border: 1px solid white;
   text-align: center;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  padding: 0.5rem; }
 
 h2.subTitulo {
   border-radius: 1em 1em 0 0;
@@ -25,7 +31,8 @@ h2.subTitulo {
   font-family: Century Gothic, Arial, Verdana, sans-serif; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  margin-bottom: 0; }
   ul li a {
     text-decoration: none; }
 
@@ -56,13 +63,22 @@ select {
 .boton {
   font-family: "Open Sans", sans-serif;
   border-radius: 3px;
-  background-color: #4848fd; }
+  background-color: #4848fd;
+  margin: 1px; }
   .boton a {
     color: white;
     text-decoration: none; }
 
-button:hover {
-  background-color: blue; }
+.boton__disabled {
+  color: #fff;
+  border-radius: 3px;
+  background-color: #4848fd;
+  opacity: 0.5; }
+
+.boton:hover {
+  background-color: #eed099; }
+  .boton:hover a {
+    color: black; }
 
 /***************************/
 /*   CLASES GRADIENTES     */
@@ -79,19 +95,21 @@ button:hover {
 .gradienteLinealCaja {
   background-image: linear-gradient(#2b72cc, #2b4a97); }
 
+section.encuadreTituloConFoto {
+  box-shadow: 0 0 5px #000;
+  transition: all 0.3s linear 0s;
+  border: 0;
+  border-radius: 0; }
+
 section.encuadreTituloConFoto:hover {
-  background-image: linear-gradient(315deg, #bf033b 0%, #ffc719 74%);
-  border: 3px solid red; }
+  box-shadow: 0 0 6px 5px #fff;
+  transition: all 0.3s linear 0s; }
 
 section.encuadreTituloConFoto a {
   text-decoration: none; }
 
 section.encuadreTituloConFoto h3:hover {
   background-color: blue; }
-
-section.encuadreTituloConFoto img:hover {
-  padding: 0;
-  transform: rotate(1.5deg); }
 
 img#imgSugeridaHoy {
   background-color: red;
@@ -127,10 +145,14 @@ header {
 /*     EFECTO ANIMACION HEADER      */
 /*  parrafo bienvenida en el header */
 /************************************/
+#logo {
+  width: 106px;
+  height: 110px; }
+
 header p {
   margin: 5px 0 20px 0;
   text-align: center;
-  background-color: rosybrown;
+  background-color: green;
   border: indigo 1px solid;
   color: gold;
   font-family: "Courier New", Courier, monospace;
@@ -183,9 +205,9 @@ header p {
   color: #fff;
   float: left;
   font-size: 1rem;
-  height: 1.5rem;
+  height: 1.8rem;
   line-height: 13px;
-  padding: 0.2rem;
+  padding: 0.4rem 1rem;
   text-decoration: none;
   text-shadow: 1px 1px 1px #1a1c1d; }
 
@@ -198,9 +220,21 @@ header p {
 
 nav a:hover {
   color: orange;
-  background-image: linear-gradient(#2b4a97, #2b72cc); }
+  background-image: linear-gradient(#2b4a97, #2b72cc);
+  border-radius: 10px; }
+
+.navbar-expand-lg .navbar-nav {
+  padding-left: 0.75rem;
+  margin: 0.25rem 0; }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem; }
+
+.dropdown-menu {
+  padding: 0; }
 
 .navbar-toggler {
+  font-size: 0.75rem;
   border: 1px solid white;
   background-image: linear-gradient(#2b72cc, #2b4a97); }
 
@@ -209,7 +243,8 @@ nav a:hover {
 
 div.dropdown-menu {
   background-image: linear-gradient(#2b72cc, #2b4a97);
-  width: max-content; }
+  width: max-content;
+  border-radius: 10px; }
   div.dropdown-menu a {
     color: #fff;
     font-size: 1rem;
@@ -278,28 +313,27 @@ main section article {
 main section h3,
 .card-title,
 .tituloPeliculas {
-  border: violet 3px solid;
-  background-color: purple;
+  background-color: #943294;
   color: white;
-  text-align: center; }
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px; }
 
 main section h4 {
   margin: 10px; }
 
+main section article img {
+  width: 247px;
+  height: 364px; }
+
 .comentarioPelicula {
   flex: 1;
   font-size: medium;
-  line-height: 2em;
-  padding: 5px;
-  background-color: #f0dbc0; }
+  line-height: 1.5em;
+  padding: 5px; }
 
-.comentarioPelicula__borde {
-  border: darkorange 2px solid;
-  border-radius: 3px; }
-
-.comentarioPelicula__gradiante {
-  background-color: #f1d2ac;
-  background-image: linear-gradient(315deg, #ec8f1d 0%, #f3e3d0 75%); }
+.cartelera {
+  justify-content: space-around; }
 
 #menuDerecho {
   background-color: black;
@@ -367,12 +401,17 @@ td.listaActores ul li {
     margin-top: 5px; } }
 
 @media only screen and (max-width: 991.98px) {
-  a.navbar-brand {
-    margin-bottom: 10px; }
   li.nav-item {
     margin-bottom: 10px; }
   div.dropdown-menu {
-    margin-top: 25px; } }
+    margin-top: 29px; } }
+
+/**************************************/
+/* MODIFICO FORMATO CARD DEL CARROUSEL*/
+/**************************************/
+.card-body {
+  padding: 0.75rem;
+  background-color: #e2e0e0; }
 
 /********************************************/
 /* FORMATO A TITULOS Y DETALLES DE PELICULAS*/
@@ -380,7 +419,12 @@ td.listaActores ul li {
 .tituloPeliculas {
   color: #f8d6dc;
   font-size: 120%;
-  font-weight: 400; }
+  font-weight: 400;
+  height: 1.5em;
+  width: 206px;
+  margin-top: 6px;
+  border-radius: 6px;
+  font-family: "Yanone Kaffeesatz", sans-serif; }
 
 .tituloPeliculas--azul {
   color: blue; }
@@ -393,14 +437,9 @@ td.listaActores ul li {
 
 /*da formato al texto del detalle de las peliculas*/
 .datosPelicula {
-  color: steelblue;
+  color: #28679b;
   font-family: "Saira Extra Condensed";
-  background-color: #c3e4f1;
   padding: 5px; }
-
-.datosPelicula__borde {
-  border: darkblue 2px solid;
-  border-radius: 3px; }
 
 /*****************************************/
 /* HTML: TOP 5 ULTIMA SEMANA y NOVEDADES */
@@ -408,12 +447,11 @@ td.listaActores ul li {
 /*****************************************/
 .encuadreTituloConFoto {
   align-self: center;
-  width: 250px;
-  text-align: center;
   border: 3px dotted red;
-  background-color: thistle;
-  padding: 3px;
-  margin: 3px; }
+  margin: 10px; }
+  .encuadreTituloConFoto img {
+    width: 205px;
+    height: 304px; }
 
 /************************************/
 /*        HTML: ULTIMA SEMANA       */

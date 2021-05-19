@@ -31,34 +31,29 @@ main section article {
 main section h3,
 .card-title,
 .tituloPeliculas {
-  border: violet 3px solid;
-  background-color: purple;
+  background-color: rgb(148, 50, 148);
   color: white;
   text-align: center;
+  border-radius: 6px;
+  padding: 3px;
 }
 
 main section h4 {
   margin: 10px;
 }
 
+main section article img {
+  width: 247px;
+  height: 364px;
+}
+
 .comentarioPelicula {
   flex: 1;
   font-size: medium;
-  line-height: 2em;
+  line-height: 1.5em;
   padding: 5px;
-  background-color: rgb(240, 219, 192);
 }
 
-.comentarioPelicula__borde {
-  border: darkorange 2px solid;
-  border-radius: 3px;
-}
-
-.comentarioPelicula__gradiante {
-  background-color: rgb(241, 210, 172);
-  background-image: linear-gradient(
-    315deg,
-    rgb(236, 143, 29) 0%,
-    rgb(243, 227, 208) 75%
-  );
+.cartelera {
+  justify-content: space-around;
 }

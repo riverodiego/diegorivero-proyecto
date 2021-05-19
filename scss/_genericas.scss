@@ -15,6 +15,7 @@ h2 {
   border: 1px solid white;
   text-align: center;
   font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
 h2.subTitulo {
@@ -29,6 +30,7 @@ h2.subTitulo {
 
 ul {
   list-style: none;
+  margin-bottom: 0;
   li a {
     text-decoration: none;
   }
@@ -67,15 +69,27 @@ select {
   font-family: "Open Sans", sans-serif;
   border-radius: 3px;
   background-color: rgb(72, 72, 253);
+  margin: 1px;
   a {
     color: white;
     text-decoration: none;
   }
 }
 
-button:hover {
-  background-color: blue;
+.boton__disabled {
+  color: #fff;
+  border-radius: 3px;
+  background-color: rgb(72, 72, 253);
+  opacity: 0.5;
 }
+
+.boton:hover {
+  background-color: rgb(238, 208, 153);
+  a {
+    color: black;
+  }
+}
+
 /***************************/
 /*   CLASES GRADIENTES     */
 /*                         */

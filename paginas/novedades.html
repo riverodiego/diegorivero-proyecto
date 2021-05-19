@@ -162,83 +162,10 @@
         </ul>
       </div>
     </nav>
-    <section id="principal" class="row ml-2 mr-2">
-      <!-- ###################### -->
-      <!-- Menu lateral izquierdo -->
-      <!-- ###################### -->
-      <div id="menuIzquierdo" class="col-6 col-md-6 col-lg-2">
-        <h2>Buscar Pelicula Por</h2>
-        <form action="">
-          <fieldset>
-            <div>
-              <label for="genero">Genero</label>
-              <select id="genero" name="genero">
-                <option value="Todos">Todos</option>
-                <option value="accion">Acción</option>
-                <option value="aventura">Aventura</option>
-                <option value="animacion">Animación</option>
-                <option value="belico">Bélico</option>
-                <option value="cienciaficcion">Ciencia Ficción</option>
-                <option value="cinenegro">Cine Negro</option>
-                <option value="comedia">Comedia</option>
-                <option value="drama">Drama</option>
-                <option value="espionaje">Espionaje</option>
-                <option value="infantil">infantil</option>
-                <option value="musical">Musical</option>
-                <option value="policiaco">Policiaco</option>
-                <option value="romantica">Romántica</option>
-                <option value="suspenso">Suspenso</option>
-                <option value="terror">Terror</option>
-                <option value="thriller">Thriller</option>
-                <option value="western">Western</option>
-              </select>
-            </div>
-            <div>
-              <label for="idioma">Idioma</label>
-              <select id="idioma" name="idioma">
-                <option value="Todos">Todos</option>
-                <option value="espanol">Español</option>
-                <option value="latino">Latino</option>
-                <option value="vose">V.O.S.E.</option>
-                <option value="versionoriginal">Version Original</option>
-              </select>
-            </div>
-            <div>
-              <label for="decada">Decada</label>
-              <select id="decada" name="decada">
-                <option value="Todas">Todas</option>
-                <option value="1950">1950</option>
-                <option value="1960">1960</option>
-                <option value="1970">1970</option>
-                <option value="1980">1980</option>
-                <option value="1990">1990</option>
-                <option value="2000">2000</option>
-                <option value="2010">2010</option>
-                <option value="Actual">Actual</option>
-              </select>
-            </div>
-            <div>
-              <label for="calificacion">Calificacion</label>
-              <select id="calificacion" name="calificacion">
-                <option value="Todas">Todas</option>
-                <option value="1 estrella">1 Estrella</option>
-                <option value="2 estrellas">2 Estrellas</option>
-                <option value="3 estrellas">3 Estrellas</option>
-                <option value="4 estrellas">4 Estrellas</option>
-                <option value="5 estrellas">5 Estrellas</option>
-              </select>
-            </div>
-          </fieldset>
-          <div>
-            <input type="submit" value="Filtrar" />
-            <input type="reset" value="Limpiar" />
-          </div>
-        </form>
-      </div>
     <!-- ################# -->
     <!-- Seccion Novedades -->
     <!-- ################# -->
-    <main>
+    <main id="principal" class="row ml-2 mr-2">
       <div class="textoAlineadoDerecha"><a href="#pie">Ir abajo</a></div>
       <h2>Seccion Novedades</h2>
       <section id="Novedad1" class="encuadreTituloConFoto">
@@ -253,51 +180,6 @@
         <button><a href="https://youtu.be/GNNnEOOYIxY"> Ver Trailer </a> </button>
       </section>
     </main>
-      <!-- #################### -->
-      <!-- Menu lateral derecho -->
-      <!-- #################### -->
-      <aside id="menuDerecho" class="col-6 col-md-6 col-lg-4">
-        <div class="cajaMenuDerecho">
-          <h2>Suscribete al Newletter :)</h2>
-          <form action="">
-            <fieldset>
-              <div>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Ejemplo@dominio.com"
-                />
-                <input type="submit" value="Enviar" />
-              </div>
-            </fieldset>
-          </form>
-        </div>
-        <div class="cajaMenuDerecho">
-          <h2>Cual Peli NO encontraste?</h2>
-          <form action="">
-            <fieldset>
-              <div>
-                <input
-                  type="text"
-                  name="faltapeli"
-                  placeholder="Nombre de la pelicula"
-                />
-                <input type="submit" value="Enviar" />
-              </div>
-            </fieldset>
-          </form>
-        </div>
-        <div class="cajaMenuDerecho">
-          <h2 id="sugeridaHoy">Sugerida Hoy</h2>
-          <img
-            id="imgSugeridaHoy"
-            src="../imagenes/ghostbuster-50.png"
-            alt="imagen de pelicula los cazafantasmas"
-          />
-          <h3 class="tituloPeliculas">Los Cazafantasmas</h3>
-        </div>
-      </aside>
-    </section>
     <!-- ############# -->
     <!-- Pie de Pagina -->
     <!-- ############# -->

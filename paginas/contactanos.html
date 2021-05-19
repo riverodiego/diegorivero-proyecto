@@ -162,202 +162,84 @@
         </ul>
       </div>
     </nav>
-    <section id="principal" class="row ml-2 mr-2">
-      <!-- ###################### -->
-      <!-- Menu lateral izquierdo -->
-      <!-- ###################### -->
-      <div id="menuIzquierdo" class="col-6 col-md-6 col-lg-2">
-        <h2>Buscar Pelicula Por</h2>
-        <form action="">
-          <fieldset>
-            <div>
-              <label for="genero">Genero</label>
-              <select id="genero" name="genero">
-                <option value="Todos">Todos</option>
-                <option value="accion">Acción</option>
-                <option value="aventura">Aventura</option>
-                <option value="animacion">Animación</option>
-                <option value="belico">Bélico</option>
-                <option value="cienciaficcion">Ciencia Ficción</option>
-                <option value="cinenegro">Cine Negro</option>
-                <option value="comedia">Comedia</option>
-                <option value="drama">Drama</option>
-                <option value="espionaje">Espionaje</option>
-                <option value="infantil">infantil</option>
-                <option value="musical">Musical</option>
-                <option value="policiaco">Policiaco</option>
-                <option value="romantica">Romántica</option>
-                <option value="suspenso">Suspenso</option>
-                <option value="terror">Terror</option>
-                <option value="thriller">Thriller</option>
-                <option value="western">Western</option>
-              </select>
-            </div>
-            <div>
-              <label for="idioma">Idioma</label>
-              <select id="idioma" name="idioma">
-                <option value="Todos">Todos</option>
-                <option value="espanol">Español</option>
-                <option value="latino">Latino</option>
-                <option value="vose">V.O.S.E.</option>
-                <option value="versionoriginal">Version Original</option>
-              </select>
-            </div>
-            <div>
-              <label for="decada">Decada</label>
-              <select id="decada" name="decada">
-                <option value="Todas">Todas</option>
-                <option value="1950">1950</option>
-                <option value="1960">1960</option>
-                <option value="1970">1970</option>
-                <option value="1980">1980</option>
-                <option value="1990">1990</option>
-                <option value="2000">2000</option>
-                <option value="2010">2010</option>
-                <option value="Actual">Actual</option>
-              </select>
-            </div>
-            <div>
-              <label for="calificacion">Calificacion</label>
-              <select id="calificacion" name="calificacion">
-                <option value="Todas">Todas</option>
-                <option value="1 estrella">1 Estrella</option>
-                <option value="2 estrellas">2 Estrellas</option>
-                <option value="3 estrellas">3 Estrellas</option>
-                <option value="4 estrellas">4 Estrellas</option>
-                <option value="5 estrellas">5 Estrellas</option>
-              </select>
-            </div>
-          </fieldset>
-          <div>
-            <input type="submit" value="Filtrar" />
-            <input type="reset" value="Limpiar" />
+    <!-- ################### -->
+    <!-- Seccion Contactanos -->
+    <!-- ################### -->
+    <main id="principal" class="row ml-2 mr-2">
+      <div class="textoAlineadoDerecha"><a href="#pie">Ir abajo</a></div>
+      <h2 id="arriba">Seccion Contactanos</h2>
+      <!-- caja del input -->
+      <form action="">
+        <fieldset>
+          <legend>Datos personales</legend>
+          <div class="p-5 m-5">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" />
           </div>
-        </form>
-      </div>
-      <!-- ################### -->
-      <!-- Seccion Contactanos -->
-      <!-- ################### -->
-      <main>
-        <div class="textoAlineadoDerecha"><a href="#pie">Ir abajo</a></div>
-        <h2 id="arriba">Seccion Contactanos</h2>
-        <!-- caja del input -->
-        <form action="">
-          <fieldset>
-            <legend>Datos personales</legend>
-            <div class="p-5 m-5">
-              <label for="nombre">Nombre:</label>
-              <input type="text" name="nombre" />
-            </div>
-            <div class="p-5 m-5">
-              <label for="apellido">Apellido:</label>
-              <input type="text" name="apellido" />
-            </div>
-            <div class="p-5 m-5">
-              <label for="hombre">Hombre</label>
-              <input type="radio" id="hombre" name="genero" value="hombre" />
-              <label for="mujer">Mujer</label>
-              <input type="radio" id="mujer" name="genero" value="mujer" />
-              <label for="noQuieroDefinir">No quiero definir</label>
-              <input
-                type="radio"
-                id="noQuieroDefinir"
-                name="genero"
-                value="indefinido"
-              />
-            </div>
-            <div class="espaciar">
-              <select name="estado">
-                <option value="soltero">Soltero/a</option>
-                <option value="casado">Casado/a</option>
-                <option value="separado">Separado/a</option>
-              </select>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Datos de Contacto</legend>
-            <div class="espaciar">
-              <label for="email">E-mail: </label>
-              <input
-                type="email"
-                name="email"
-                placeholder="ejemplo@dominio.com"
-              />
-            </div>
-            <div class="espaciar">
-              <label for="acepta">Desea recibir nuestro Newletter?</label>
-              <input type="checkbox" id="acepta" name="acepta" value="1" />
-            </div>
-            <div class="espaciar">
-              <label for="motivo">Motivo: </label>
-              <select name="motivo">
-                <option value="comentario">Comentario</option>
-                <option value="sugerencia">Sugerencia</option>
-                <option value="correccion">Correccion</option>
-              </select>
-            </div>
-            <div class="espaciar">
-              <label for="mensaje">Mensaje: </label> <br />
-              <textarea name="mensaje" rows="8" cols="40"></textarea><br />
-            </div>
-            <div class="espaciar">
-              <label for="urgente">Responder urgente</label>
-              <input type="checkbox" id="urgente" name="urgente" value="1" />
-            </div>
-          </fieldset>
-          <!-- botones -->
+          <div class="p-5 m-5">
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" />
+          </div>
+          <div class="p-5 m-5">
+            <label for="hombre">Hombre</label>
+            <input type="radio" id="hombre" name="genero" value="hombre" />
+            <label for="mujer">Mujer</label>
+            <input type="radio" id="mujer" name="genero" value="mujer" />
+            <label for="noQuieroDefinir">No quiero definir</label>
+            <input
+              type="radio"
+              id="noQuieroDefinir"
+              name="genero"
+              value="indefinido"
+            />
+          </div>
           <div class="espaciar">
-            <input type="submit" value="Enviar formulario" />
-            <input type="reset" value="Limpiar formulario" />
-            <input type="button" value="Sin acciones" />
+            <select name="estado">
+              <option value="soltero">Soltero/a</option>
+              <option value="casado">Casado/a</option>
+              <option value="separado">Separado/a</option>
+            </select>
           </div>
-        </form>
-      </main>
-      <!-- #################### -->
-      <!-- Menu lateral derecho -->
-      <!-- #################### -->
-      <aside id="menuDerecho" class="col-6 col-md-6 col-lg-4">
-        <div class="cajaMenuDerecho">
-          <h2>Suscribete al Newletter :)</h2>
-          <form action="">
-            <fieldset>
-              <div>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Ejemplo@dominio.com"
-                />
-                <input type="submit" value="Enviar" />
-              </div>
-            </fieldset>
-          </form>
+        </fieldset>
+        <fieldset>
+          <legend>Datos de Contacto</legend>
+          <div class="espaciar">
+            <label for="email">E-mail: </label>
+            <input
+              type="email"
+              name="email"
+              placeholder="ejemplo@dominio.com"
+            />
+          </div>
+          <div class="espaciar">
+            <label for="acepta">Desea recibir nuestro Newletter?</label>
+            <input type="checkbox" id="acepta" name="acepta" value="1" />
+          </div>
+          <div class="espaciar">
+            <label for="motivo">Motivo: </label>
+            <select name="motivo">
+              <option value="comentario">Comentario</option>
+              <option value="sugerencia">Sugerencia</option>
+              <option value="correccion">Correccion</option>
+            </select>
+          </div>
+          <div class="espaciar">
+            <label for="mensaje">Mensaje: </label> <br />
+            <textarea name="mensaje" rows="8" cols="40"></textarea><br />
+          </div>
+          <div class="espaciar">
+            <label for="urgente">Responder urgente</label>
+            <input type="checkbox" id="urgente" name="urgente" value="1" />
+          </div>
+        </fieldset>
+        <!-- botones -->
+        <div class="espaciar">
+          <input type="submit" value="Enviar formulario" />
+          <input type="reset" value="Limpiar formulario" />
+          <input type="button" value="Sin acciones" />
         </div>
-        <div class="cajaMenuDerecho">
-          <h2>Cual Peli NO encontraste?</h2>
-          <form action="">
-            <fieldset>
-              <div>
-                <input
-                  type="text"
-                  name="faltapeli"
-                  placeholder="Nombre de la pelicula"
-                />
-                <input type="submit" value="Enviar" />
-              </div>
-            </fieldset>
-          </form>
-        </div>
-        <div class="cajaMenuDerecho">
-          <h2 id="sugeridaHoy">Sugerida Hoy</h2>
-          <img
-            id="imgSugeridaHoy"
-            src="../imagenes/ghostbuster-50.png"
-            alt="imagen de pelicula los cazafantasmas"
-          />
-          <h3 class="tituloPeliculas">Los Cazafantasmas</h3>
-        </div>
-      </aside>
-    </section>
+      </form>
+    </main>
     <!-- ############# -->
     <!-- Pie de Pagina -->
     <!-- ############# -->

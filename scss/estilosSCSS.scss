@@ -8,15 +8,34 @@
 @import "footer";
 @import "tabla";
 @import "mediaquery";
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+/**************************************/
+/* MODIFICO FORMATO CARD DEL CARROUSEL*/
+/**************************************/
+
+.card-body {
+  padding: 0.75rem;
+  background-color: rgb(226, 224, 224);
+}
 
 /********************************************/
 /* FORMATO A TITULOS Y DETALLES DE PELICULAS*/
 /********************************************/
+
 .tituloPeliculas {
   color: rgb(248, 214, 220);
   font-size: 120%;
-  // -webkit-text-stroke: 1px gray;
   font-weight: 400;
+  height: 1.5em;
+  width: 206px;
+  margin-top: 6px;
+  border-radius: 6px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
 .tituloPeliculas--azul {
@@ -32,15 +51,9 @@
 
 /*da formato al texto del detalle de las peliculas*/
 .datosPelicula {
-  color: steelblue;
+  color: rgb(40, 103, 155);
   font-family: "Saira Extra Condensed";
-  background-color: rgb(195, 228, 241);
   padding: 5px;
-}
-
-.datosPelicula__borde {
-  border: darkblue 2px solid;
-  border-radius: 3px;
 }
 
 /*****************************************/
@@ -49,12 +62,12 @@
 /*****************************************/
 .encuadreTituloConFoto {
   align-self: center;
-  width: 250px;
-  text-align: center;
   border: 3px dotted red;
-  background-color: thistle;
-  padding: 3px;
-  margin: 3px;
+  margin: 10px;
+  img {
+    width: 205px;
+    height: 304px;
+  }
 }
 
 /************************************/

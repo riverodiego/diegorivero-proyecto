@@ -6,19 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PelisClasicas.com</title>
     <link href="../imagenes/favicon.gif" type="image/x-ico" rel="icon" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500&display=swap"
-      rel="stylesheet"
-    />
     <!-- Bootstrap CDN en la Nube CSS -->
     <link
       rel="stylesheet"
@@ -166,210 +153,102 @@
         </ul>
       </div>
     </nav>
-    <section id="principal" class="row ml-2 mr-2">
-      <!-- ###################### -->
-      <!-- Menu lateral izquierdo -->
-      <!-- ###################### -->
-      <div id="menuIzquierdo" class="col-6 col-md-6 col-lg-2">
-        <h2>Buscar Pelicula Por</h2>
-        <form action="">
-          <fieldset>
-            <div>
-              <label for="genero">Genero</label>
-              <select id="genero" name="genero">
-                <option value="Todos">Todos</option>
-                <option value="accion">Acción</option>
-                <option value="aventura">Aventura</option>
-                <option value="animacion">Animación</option>
-                <option value="belico">Bélico</option>
-                <option value="cienciaficcion">Ciencia Ficción</option>
-                <option value="cinenegro">Cine Negro</option>
-                <option value="comedia">Comedia</option>
-                <option value="drama">Drama</option>
-                <option value="espionaje">Espionaje</option>
-                <option value="infantil">infantil</option>
-                <option value="musical">Musical</option>
-                <option value="policiaco">Policiaco</option>
-                <option value="romantica">Romántica</option>
-                <option value="suspenso">Suspenso</option>
-                <option value="terror">Terror</option>
-                <option value="thriller">Thriller</option>
-                <option value="western">Western</option>
-              </select>
-            </div>
-            <div>
-              <label for="idioma">Idioma</label>
-              <select id="idioma" name="idioma">
-                <option value="Todos">Todos</option>
-                <option value="espanol">Español</option>
-                <option value="latino">Latino</option>
-                <option value="vose">V.O.S.E.</option>
-                <option value="versionoriginal">Version Original</option>
-              </select>
-            </div>
-            <div>
-              <label for="decada">Decada</label>
-              <select id="decada" name="decada">
-                <option value="Todas">Todas</option>
-                <option value="1950">1950</option>
-                <option value="1960">1960</option>
-                <option value="1970">1970</option>
-                <option value="1980">1980</option>
-                <option value="1990">1990</option>
-                <option value="2000">2000</option>
-                <option value="2010">2010</option>
-                <option value="Actual">Actual</option>
-              </select>
-            </div>
-            <div>
-              <label for="calificacion">Calificacion</label>
-              <select id="calificacion" name="calificacion">
-                <option value="Todas">Todas</option>
-                <option value="1 estrella">1 Estrella</option>
-                <option value="2 estrellas">2 Estrellas</option>
-                <option value="3 estrellas">3 Estrellas</option>
-                <option value="4 estrellas">4 Estrellas</option>
-                <option value="5 estrellas">5 Estrellas</option>
-              </select>
-            </div>
-          </fieldset>
-          <div>
-            <input type="submit" value="Filtrar" />
-            <input type="reset" value="Limpiar" />
-          </div>
-        </form>
-      </div>
-      <!-- ############# -->
-      <!-- Seccion Top 5 -->
-      <!-- ############# -->
-      <main class="col-12 col-md-6 col-lg-6 ml-1 mr-1 mb-2">
-        <div class="textoAlineadoDerecha"><a href="#pie">Ir abajo</a></div>
-        <h2>Seccion Top 5</h2>
-        <div class="cartelera">
-          <section id="top5lugar1" class="encuadreTituloConFoto">
-            <a href="./pelicula1.html">
-              <img
-                src="../imagenes/Beetlejuice_el_super_fantasma-898353028-206x300.jpg"
-                alt="logo de la pelicula BeetleJuice"
-              />
-              <h3 class="tituloPeliculas">BeetleJuice (1988)</h3>
-            </a>
+    <!-- ############# -->
+    <!-- Seccion Top 5 -->
+    <!-- ############# -->
+    <main class="container-fluid m-3">
+      <div class="textoAlineadoDerecha"><a href="#pie">Ir abajo</a></div>
+      <h2>Seccion Top 5</h2>
+      <div class="cartelera">
+        <section id="top5lugar1" class="encuadreTituloConFoto">
+          <a href="./pelicula1.html">
+            <img
+              src="../imagenes/Beetlejuice_el_super_fantasma-898353028-206x300.jpg"
+              alt="logo de la pelicula BeetleJuice"
+            />
+            <h3 class="tituloPeliculas">BeetleJuice (1988)</h3>
+          </a>
+          <div class="d-flex justify-content-center">
             <button class="boton">
               <a href="./pelicula1.html"> Ficha </a>
             </button>
             <button class="boton">
               <a href="https://youtu.be/sW4Ghngz50Y"> Trailer </a>
             </button>
-          </section>
-          <section id="top5lugar2" class="encuadreTituloConFoto">
-            <a href="./pelicula2.html">
-              <img
-                src="../imagenes/Hechizo_del_tiempo-111669822-206x302.jpg"
-                alt="logo de la pelicula Hechizo del tiempo"
-              />
-              <h3 class="tituloPeliculas">Hechizo del Tiempo (1993)</h3>
-            </a>
+          </div>
+        </section>
+        <section id="top5lugar2" class="encuadreTituloConFoto">
+          <a href="./pelicula2.html">
+            <img
+              src="../imagenes/Hechizo_del_tiempo-111669822-206x302.jpg"
+              alt="logo de la pelicula Hechizo del tiempo"
+            />
+            <h3 class="tituloPeliculas">Hechizo del Tiempo (1993)</h3>
+          </a>
+          <div class="d-flex justify-content-center">
             <button class="boton">
               <a href="./pelicula2.html"> Ficha </a>
             </button>
             <button class="boton">
               <a href="https://youtu.be/sqQHQ9PNV0Y"> Trailer </a>
             </button>
-          </section>
-          <section id="top5lugar3" class="encuadreTituloConFoto">
-            <a href="../index.html">
-              <img
-                src="../imagenes/Los_cazafantasmas-708072042-206x300.jpg"
-                alt="logo de la pelicula Los cazafantasmas"
-              />
-              <h3 class="tituloPeliculas">Los Cazafantasmas (1984)</h3>
-            </a>
-            <button class="boton">
-              <a href="../index.html"> Ficha No Disp</a>
+          </div>
+        </section>
+        <section id="top5lugar3" class="encuadreTituloConFoto">
+          <a href="../index.html">
+            <img
+              src="../imagenes/Los_cazafantasmas-708072042-206x300.jpg"
+              alt="logo de la pelicula Los cazafantasmas"
+            />
+            <h3 class="tituloPeliculas">Los Cazafantasmas (1984)</h3>
+          </a>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="boton__disabled" disabled>
+              <span> Ficha No Disp</span>
             </button>
             <button class="boton">
               <a href="https://youtu.be/cyRqR56aCKc"> Trailer </a>
             </button>
-          </section>
-          <section id="top5lugar4" class="encuadreTituloConFoto">
-            <a href="../index.html">
-              <img
-                src="../imagenes/Ghost_La_sombra_del_amor-419228198-206x305.jpg"
-                alt="logo de la pelicula Ghost la sombra del amor"
-              />
-              <h3 class="tituloPeliculas">Ghost la Sombra del amor (1990)</h3>
-            </a>
-            <button class="boton">
-              <a href="../index.html"> Ficha No Disp</a>
+          </div>
+        </section>
+        <section id="top5lugar4" class="encuadreTituloConFoto">
+          <a href="../index.html">
+            <img
+              src="../imagenes/Ghost_La_sombra_del_amor-419228198-206x305.jpg"
+              alt="logo de la pelicula Ghost la sombra del amor"
+            />
+            <h3 class="tituloPeliculas">Ghost la Sombra del amor (1990)</h3>
+          </a>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="boton__disabled" disabled>
+              <span> Ficha No Disp</span>
             </button>
             <button class="boton">
               <a href="https://youtu.be/_2ArbmRdpmk"> Trailer </a>
             </button>
-          </section>
-          <section id="top5lugar5" class="encuadreTituloConFoto">
-            <a href="../index.html">
-              <img
-                src="../imagenes/La_guerra_de_las_galaxias-897494962-206x307.jpg"
-                alt="logo de la pelicula La guerra de las galaxias"
-              />
-              <h3 class="tituloPeliculas">La Guerra de las Galaxias (1977)</h3>
-            </a>
-            <button class="boton">
-              <a href="../index.html"> Ficha No Disp</a>
+          </div>
+        </section>
+        <section id="top5lugar5" class="encuadreTituloConFoto">
+          <a href="../index.html">
+            <img
+              src="../imagenes/La_guerra_de_las_galaxias-897494962-206x307.jpg"
+              alt="logo de la pelicula La guerra de las galaxias"
+            />
+            <h3 class="tituloPeliculas">La Guerra de las Galaxias (1977)</h3>
+          </a>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="boton__disabled" disabled>
+              <span> Ficha No Disp</span>
             </button>
             <button class="boton">
               <a href="https://www.youtube.com/watch?v=UTwwKpCGOtM">
                 Trailer
               </a>
             </button>
-          </section>
-        </div>
-      </main>
-      <!-- #################### -->
-      <!-- Menu lateral derecho -->
-      <!-- #################### -->
-      <aside id="menuDerecho" class="col-6 col-md-6 col-lg-3">
-        <div class="cajaMenuDerecho">
-          <h2>Suscribete al Newletter :)</h2>
-          <form action="">
-            <fieldset>
-              <div>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Ejemplo@dominio.com"
-                />
-                <input type="submit" value="Enviar" />
-              </div>
-            </fieldset>
-          </form>
-        </div>
-        <div class="cajaMenuDerecho">
-          <h2>Cual Peli NO encontraste?</h2>
-          <form action="">
-            <fieldset>
-              <div>
-                <input
-                  type="text"
-                  name="faltapeli"
-                  placeholder="Nombre de la pelicula"
-                />
-                <input type="submit" value="Enviar" />
-              </div>
-            </fieldset>
-          </form>
-        </div>
-        <div class="cajaMenuDerecho">
-          <h2 id="sugeridaHoy">Sugerida Hoy</h2>
-          <img
-            id="imgSugeridaHoy"
-            src="../imagenes/ghostbuster-50.png"
-            alt="imagen de pelicula los cazafantasmas"
-          />
-          <h3 class="tituloPeliculas">Los Cazafantasmas</h3>
-        </div>
-      </aside>
-    </section>
+          </div>
+        </section>
+      </div>
+    </main>
     <!-- ############# -->
     <!-- Pie de Pagina -->
     <!-- ############# -->
