@@ -257,38 +257,6 @@ div.dropdown-menu {
     color: orange;
     background-image: linear-gradient(#2b4a97, #2b72cc); }
 
-#menuIzquierdo {
-  background-color: black;
-  border: purple 3px solid;
-  margin: 20px 0;
-  padding: 10px 0;
-  text-align: center;
-  align-self: center; }
-
-div.cajaMenuIzquierdo {
-  align-self: center;
-  border-radius: 1.5em;
-  border: 1px solid white;
-  text-align: center;
-  font-size: 1.5rem;
-  background-color: burlywood;
-  padding-bottom: 20px;
-  margin: 20px; }
-
-#menuIzquierdo form fieldset {
-  padding: 5px; }
-
-#menuIzquierdo form div {
-  margin: 5px 5px 0 5px; }
-
-/*Unifica los menues laterales a la izquierda*/
-#unificaMenuLateral {
-  display: flex;
-  flex-flow: column nowrap;
-  align-content: space-around;
-  margin-top: 100px;
-  margin-left: 2px; }
-
 main {
   display: flex;
   flex-flow: column nowrap; }
@@ -335,32 +303,6 @@ main section article img {
 .cartelera {
   justify-content: space-around; }
 
-#menuDerecho {
-  background-color: black;
-  border: purple 3px solid;
-  margin-top: 100px;
-  padding: 10px 0;
-  text-align: center;
-  align-self: center; }
-
-div.cajaMenuDerecho {
-  align-self: center;
-  border-radius: 1.5em;
-  border: 1px solid white;
-  text-align: center;
-  font-size: 1rem;
-  background-color: burlywood;
-  padding-bottom: 20px;
-  margin: 20px; }
-  div.cajaMenuDerecho input {
-    width: 90%; }
-
-#sugeridaHoy {
-  color: deeppink;
-  -webkit-text-stroke: 1px greenyellow;
-  background-color: #3a3a3a;
-  margin-bottom: 10px; }
-
 /***************************/
 /*   HTML TODOS FOOTERS    */
 /*  Aplica estilos LISTA   */
@@ -391,8 +333,9 @@ td ul {
   list-style: none;
   text-align: left; }
 
-td.listaActores ul li {
-  width: auto; }
+.bd-highlight {
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid rgba(86, 61, 124, 0.15); }
 
 @media only screen and (min-width: 992px) {
   li.nav-item {
@@ -452,15 +395,3 @@ td.listaActores ul li {
   .encuadreTituloConFoto img {
     width: 205px;
     height: 304px; }
-
-/************************************/
-/*        HTML: ULTIMA SEMANA       */
-/*      Formatea aplicando FLEX     */
-/************************************/
-/*le doy un orden primero y que crezca 
-  para destacar*/
-#USNro2 {
-  flex-grow: 2;
-  order: -1;
-  background-color: indigo;
-  border: gold 5px dotted; }

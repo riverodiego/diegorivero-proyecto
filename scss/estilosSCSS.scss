@@ -2,9 +2,7 @@
 @import "efectos";
 @import "header";
 @import "nav";
-@import "menu-izq";
 @import "main";
-@import "menu-der";
 @import "footer";
 @import "tabla";
 @import "mediaquery";
@@ -68,19 +66,4 @@
     width: 205px;
     height: 304px;
   }
-}
-
-/************************************/
-/*        HTML: ULTIMA SEMANA       */
-/*      Formatea aplicando FLEX     */
-/************************************/
-
-/*le doy un orden primero y que crezca 
-  para destacar*/
-
-#USNro2 {
-  flex-grow: 2;
-  order: -1;
-  background-color: indigo;
-  border: gold 5px dotted;
 }
