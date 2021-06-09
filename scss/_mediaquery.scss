@@ -30,6 +30,10 @@
   .fuente-404 {
     font-size: 0.7rem;
   }
+  .img-carousel-tam {
+    max-width: 90vw;
+    max-height: 95vh;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -44,6 +48,10 @@
   .fuente-404 {
     font-size: 2rem;
   }
+  .img-carousel-tam {
+    max-width: 80vw;
+    max-height: 90vh;
+  }
 }
 
 @media (min-width: 576px) {
@@ -53,6 +61,10 @@
   }
   .fuente-404 {
     font-size: 2rem;
+  }
+  .img-carousel-tam {
+    max-width: 75vw;
+    max-height: 85vh;
   }
 }
 
@@ -65,6 +77,10 @@
   .fuente-404 {
     font-size: 3rem;
   }
+  .img-carousel-tam {
+    max-width: 70vw;
+    max-height: 80vh;
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -73,6 +89,10 @@
     max-width: 450px;
     max-height: 350px;
   }
+  .img-carousel-tam {
+    max-width: 65vw;
+    max-height: 75vh;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -80,5 +100,9 @@
   iframe {
     max-width: 500px;
     max-height: 400px;
+  }
+  .img-carousel-tam {
+    max-width: 50vw;
+    max-height: 60vh;
   }
 }

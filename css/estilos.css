@@ -379,7 +379,7 @@ main div.cartelera {
 .cartel-pelicula {
   background: none 0 0 repeat scroll rgba(15, 226, 241, 0.5);
   margin: 0 0 0 20%;
-  font-size: 2rem; }
+  font-size: 1.5rem; }
 
 main section article img {
   width: 247px;
@@ -490,7 +490,10 @@ form fieldset label {
   textarea {
     width: 90%; }
   .fuente-404 {
-    font-size: 0.7rem; } }
+    font-size: 0.7rem; }
+  .img-carousel-tam {
+    max-width: 90vw;
+    max-height: 95vh; } }
 
 @media (min-width: 301px) and (max-width: 575px) {
   .d-ocultar-medio {
@@ -498,31 +501,46 @@ form fieldset label {
 
 @media (min-width: 301px) {
   .fuente-404 {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .img-carousel-tam {
+    max-width: 80vw;
+    max-height: 90vh; } }
 
 @media (min-width: 576px) {
   iframe {
     max-width: 300px;
     max-height: 200px; }
   .fuente-404 {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .img-carousel-tam {
+    max-width: 75vw;
+    max-height: 85vh; } }
 
 @media (min-width: 768px) {
   iframe {
     max-width: 400px;
     max-height: 300px; }
   .fuente-404 {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  .img-carousel-tam {
+    max-width: 70vw;
+    max-height: 80vh; } }
 
 @media (min-width: 992px) {
   iframe {
     max-width: 450px;
-    max-height: 350px; } }
+    max-height: 350px; }
+  .img-carousel-tam {
+    max-width: 65vw;
+    max-height: 75vh; } }
 
 @media (min-width: 1200px) {
   iframe {
     max-width: 500px;
-    max-height: 400px; } }
+    max-height: 400px; }
+  .img-carousel-tam {
+    max-width: 50vw;
+    max-height: 60vh; } }
 
 /********************************************/
 /* FORMATO A TITULOS Y DETALLES DE PELICULAS*/
