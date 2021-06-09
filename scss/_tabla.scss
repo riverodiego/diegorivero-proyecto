@@ -17,15 +17,26 @@ td {
   background-color: white;
   border: 1px solid;
   text-align: center;
-  width: auto;
-  height: auto;
+  div {
+    max-height: 280px;
+    min-width: 190px;
+    overflow-y: auto;
+  }
 }
+
+td {
+  ul li {
+    display: inline-block;
+    @extend .fuente-datos-tabla;
+  }
+  p {
+    @extend .fuente-datos-tabla;
+  }
+}
+
 td ul {
   list-style: none;
   text-align: left;
-}
-
-.bd-highlight {
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.15);
+  margin: 0;
+  padding: 0;
 }

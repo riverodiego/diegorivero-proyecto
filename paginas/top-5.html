@@ -3,8 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PelisClasicas.com</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Peliculas clasicas, esta seccion es el top de las 5 mejores peliculas del momento"
+    />
+    <meta
+      name="keywords"
+      content="pelicula, top 5, mejor peliculas, beetlejuice, 1988, hechizo del tiempo, 1993, los cazafantasmas, 1984, Ghost la sombra del amor, 1990, la guerra de las galaxias, 1977"
+    />
+    <title>Peliculas Clasicas Seccion Top 5</title>
     <link href="../imagenes/favicon.gif" type="image/x-ico" rel="icon" />
     <!-- Bootstrap CDN en la Nube CSS -->
     <link
@@ -13,92 +24,92 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Estilo propio -->
     <link rel="stylesheet" href="../css/estilos.css" />
   </head>
-  <body>
+  <body class="container-fluid">
     <!-- ########################################################## -->
     <!-- Encabezado con link redes sociales y buscador de peliculas -->
     <!-- ########################################################## -->
-    <header id="arriba" class="gradienteRadial container-fluid">
-      <div class="row">
-        <!-- Logo de la pagina -->
-        <div class="col-12 col-md-2 col-lg-2 text-center">
-          <a href="../index.html">
-            <img id="logo" src="../imagenes/logo.png" alt="logo de la pagina" />
-          </a>
-        </div>
-        <!-- Titulo de la pagina -->
-        <h1 id="titulo" class="col-md-6 col-lg-4">PelisClasicas.com</h1>
-        <aside class="col-md-4 col-lg-6">
-          <!-- iconos de redes sociales -->
-          <section class="row justify-content-end m-2">
-            <a href="./contactanos.html">
-              <img
-                src="../imagenes/correo.png"
-                alt="formulario de contacto"
-                class="rounded-lg m-1"
-              />
-            </a>
-            <a href="https://twitter.com/tweeter?lang=es" target="_blank">
-              <img
-                src="../imagenes/twiter.png"
-                alt="ir a twitter"
-                class="rounded-lg m-1"
-              />
-            </a>
-            <a href="https://ar.pinterest.com/" target="_blank">
-              <img
-                src="../imagenes/pinterest.png"
-                alt="ir a pinterest"
-                class="rounded-lg m-1"
-              />
-            </a>
-            <a href="https://www.instagram.com/?hl=es" target="_blank">
-              <img
-                src="../imagenes/instagram.png"
-                alt="ir a instagram"
-                class="rounded-lg m-1"
-              />
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-              <img
-                src="../imagenes/facebook.png"
-                alt="ir a facebook"
-                class="rounded-lg m-1"
-              />
-            </a>
-          </section>
-          <!-- buscardor de peliculas -->
-          <section class="row justify-content-end text-right mr-2">
-            <form action="">
-              <fieldset>
-                <input
-                  class="m-1"
-                  type="text"
-                  name="buscapeli"
-                  placeholder="Nombre de la Pelicula"
-                />
-                <input class="m-1" type="submit" value="Buscar" />
-              </fieldset>
-            </form>
-          </section>
-        </aside>
+    <header
+      id="arriba"
+      class="
+        gradiente-radial
+        d-inline-flex
+        flex-wrap
+        justify-content-center justify-content-md-between
+        align-items-center
+        w-100
+      "
+    >
+      <!-- Logo de la pagina -->
+      <div class="d-none d-sm-block m-3">
+        <a href="../index.html">
+          <img id="logo" src="../imagenes/logo.png" alt="logo de la pagina" />
+        </a>
       </div>
-      <!-- Mensaje bienvenida -->
-      <p class="row justify-content-center">
-        Bienvenidos a Nuestra Pagina de Peliculas Clasicas<br />
-        Si no la tenemos, avisanos y la buscamos por vos!!!
-      </p>
+      <!-- Titulo de la pagina -->
+      <h1 id="titulo m-3">PelisClasicas.com</h1>
+      <aside class="m-3">
+        <!-- iconos de redes sociales -->
+        <section class="text-right m-1">
+          <a href="./contactanos.html">
+            <img
+              src="../imagenes/correo.png"
+              alt="formulario de contacto"
+              class="rounded-lg m-1"
+            />
+          </a>
+          <a href="https://twitter.com/tweeter?lang=es" target="_blank">
+            <img
+              src="../imagenes/twiter.png"
+              alt="ir a twitter"
+              class="rounded-lg m-1"
+            />
+          </a>
+          <a href="https://ar.pinterest.com/" target="_blank">
+            <img
+              src="../imagenes/pinterest.png"
+              alt="ir a pinterest"
+              class="rounded-lg m-1"
+            />
+          </a>
+          <a href="https://www.instagram.com/?hl=es" target="_blank">
+            <img
+              src="../imagenes/instagram.png"
+              alt="ir a instagram"
+              class="rounded-lg m-1"
+            />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img
+              src="../imagenes/facebook.png"
+              alt="ir a facebook"
+              class="rounded-lg m-1"
+            />
+          </a>
+        </section>
+        <!-- buscardor de peliculas -->
+        <section class="text-right m-1">
+          <form action="">
+            <fieldset>
+              <input
+                class="m-1"
+                type="text"
+                name="buscapeli"
+                placeholder="Nombre de la Pelicula"
+              />
+              <input class="m-1" type="submit" value="Buscar" />
+            </fieldset>
+          </form>
+        </section>
+      </aside>
     </header>
     <!-- ############## -->
     <!-- Menu principal -->
     <!-- ############## -->
-    <nav class="container-fluid navbar navbar-expand-lg fondoMenu">
-      <a class="navbar-brand botonMenu ml-2" href="#">PelisClasicas.com</a>
+    <nav class="navbar navbar-expand-lg fondoMenu">
+      <a class="navbar-brand boton-menu ml-2" href="#">PelisClasicas.com</a>
       <button
         class="navbar-toggler mr-2"
         type="button"
@@ -113,25 +124,26 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link botonMenu" href="../index.html">
+            <a class="nav-link boton-menu" href="../index.html">
               <span class="homeMenu"></span>
               <span>Inicio</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link botonMenu" href="./top-5.html">Top 5</a>
+            <a class="nav-link boton-menu" href="./top-5.html">Top 5</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link botonMenu" href="./ultima-semana.html"
-              ><span class="ultimaSemMenu"></span><span>Ultima Semana</span></a
+            <a class="nav-link boton-menu" href="./ultima-semana.html"
+              ><span class="ultimaSemMenu"></span
+              ><span class="">Ultima Semana</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link botonMenu" href="./novedades.html">Novedades</a>
+            <a class="nav-link boton-menu" href="./novedades.html">Novedades</a>
           </li>
           <li class="nav-item dropdown">
             <a
-              class="nav-link dropdown-toggle botonMenu"
+              class="nav-link dropdown-toggle boton-menu"
               href="#"
               id="navbarDropdownMenuLink"
               role="button"
@@ -157,17 +169,22 @@
     <!-- ############# -->
     <!-- Seccion Top 5 -->
     <!-- ############# -->
-    <main class="container-fluid m-3">
-      <div class="textoAlineadoDerecha"><a href="#pie">Ir abajo</a></div>
-      <h2>Seccion Top 5</h2>
+    <main class="row justify-content-center m-3">
+      <h2 class="col-10 col-md-6 col-lg-4 text-center ml-2 mr-2">
+        Seccion Top 5
+      </h2>
+      <div class="col-10 text-right fuente-celeste mr-5">
+        <a href="#pie">Ir abajo</a>
+      </div>
       <div class="cartelera">
         <section id="top5lugar1" class="encuadreTituloConFoto">
+          <div class="fecha-pelicula">1988</div>
           <a href="./beetlejuice.html">
             <img
               src="../imagenes/beetlejuice_el_super_fantasma-898353028-206x300.jpg"
               alt="logo de la pelicula BeetleJuice"
             />
-            <h3 class="tituloPeliculas">BeetleJuice (1988)</h3>
+            <h3 class="titulo-pelicula">BeetleJuice</h3>
           </a>
           <div class="d-flex justify-content-center">
             <button class="boton">
@@ -179,12 +196,13 @@
           </div>
         </section>
         <section id="top5lugar2" class="encuadreTituloConFoto">
+          <div class="fecha-pelicula">1993</div>
           <a href="./hechizo_del_tiempo.html">
             <img
               src="../imagenes/hechizo_del_tiempo-111669822-206x302.jpg"
               alt="logo de la pelicula Hechizo del tiempo"
             />
-            <h3 class="tituloPeliculas">Hechizo del Tiempo (1993)</h3>
+            <h3 class="titulo-pelicula">Hechizo del Tiempo</h3>
           </a>
           <div class="d-flex justify-content-center">
             <button class="boton">
@@ -196,12 +214,13 @@
           </div>
         </section>
         <section id="top5lugar3" class="encuadreTituloConFoto">
+          <div class="fecha-pelicula">1984</div>
           <a href="../index.html">
             <img
               src="../imagenes/los_cazafantasmas-708072042-206x300.jpg"
               alt="logo de la pelicula Los cazafantasmas"
             />
-            <h3 class="tituloPeliculas">Los Cazafantasmas (1984)</h3>
+            <h3 class="titulo-pelicula">Los Cazafantasmas</h3>
           </a>
           <div class="d-flex justify-content-center">
             <button type="button" class="boton__disabled" disabled>
@@ -213,12 +232,13 @@
           </div>
         </section>
         <section id="top5lugar4" class="encuadreTituloConFoto">
+          <div class="fecha-pelicula">1990</div>
           <a href="../index.html">
             <img
               src="../imagenes/ghost_La_sombra_del_amor-419228198-206x305.jpg"
-              alt="logo de la pelicula ghost la sombra del amor"
+              alt="logo de la pelicula Ghost la sombra del amor"
             />
-            <h3 class="tituloPeliculas">Ghost la Sombra del amor (1990)</h3>
+            <h3 class="titulo-pelicula">Ghost la Sombra del amor</h3>
           </a>
           <div class="d-flex justify-content-center">
             <button type="button" class="boton__disabled" disabled>
@@ -230,12 +250,13 @@
           </div>
         </section>
         <section id="top5lugar5" class="encuadreTituloConFoto">
+          <div class="fecha-pelicula">1977</div>
           <a href="../index.html">
             <img
               src="../imagenes/la_guerra_de_las_galaxias-897494962-206x307.jpg"
               alt="logo de la pelicula La guerra de las galaxias"
             />
-            <h3 class="tituloPeliculas">La Guerra de las Galaxias (1977)</h3>
+            <h3 class="titulo-pelicula">La Guerra de las Galaxias</h3>
           </a>
           <div class="d-flex justify-content-center">
             <button type="button" class="boton__disabled" disabled>
@@ -256,35 +277,30 @@
     <footer id="pie" class="container-fluid">
       <div id="pie1renglon" class="row">
         <nav class="navbar navbar-expand-lg fondoMenu col-12">
-          <a class="navbar-brand botonMenu" href="#"
+          <a class="navbar-brand boton-menu" href="#"
             >PelisClasicas.com copyright 2021c</a
           >
           <ul class="navbar-nav w-100 justify-content-end">
             <li class="nav-item">
-              <a class="nav-link botonMenu" href="./paginas/quienes-somos.html"
+              <a class="nav-link boton-menu" href="./paginas/quienes-somos.html"
                 >Quienes Somos <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link botonMenu" href="./paginas/contactanos.html"
+              <a class="nav-link boton-menu" href="./paginas/contactanos.html"
                 >Contactanos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link botonMenu" href="./paginas/ayuda.html"
-                >Ayuda</a
               >
             </li>
           </ul>
         </nav>
       </div>
-      <div id="pie2renglon" class="row fontCeleste">
+      <div id="pie2renglon" class="row fuente-celeste">
         <ul class="col-12 text-center">
           <li class="d-inline">
             <a href="#arriba">Ir arriba</a>
           </li>
           <li class="d-inline">
-            <a href="./index.html">Volver al Inicio</a>
+            <a href="../index.html">Volver al Inicio</a>
           </li>
         </ul>
       </div>

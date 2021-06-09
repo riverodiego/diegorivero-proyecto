@@ -3,8 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PelisClasicas.com</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Peliculas clasicas, esta seccion es para detallar en tabla algunas peliculas del sitio"
+    />
+    <meta
+      name="keywords"
+      content="lista, pelicula, año estreno, titulo original, genero, duracion, pais, direccion, guion, musica, protagonistas"
+    />
+    <title>Peliculas Clasicas Seccion Lista General</title>
     <link href="../imagenes/favicon.gif" type="image/x-ico" rel="icon" />
     <!-- Bootstrap CDN en la Nube CSS -->
     <link
@@ -13,88 +24,92 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+    <!-- Estilo propio -->
     <link rel="stylesheet" href="../css/estilos.css" />
   </head>
-  <body>
+  <body class="container-fluid">
     <!-- ########################################################## -->
     <!-- Encabezado con link redes sociales y buscador de peliculas -->
     <!-- ########################################################## -->
-    <header id="arriba" class="gradienteRadial container-fluid">
-      <div class="row">
-        <!-- imagen de lapagina -->
-        <div class="col-12 col-md-2 col-lg-2 text-center">
-          <a href="../index.html">
-            <img id="logo" src="../imagenes/logo.png" alt="imagen de lapagina" />
-          </a>
-        </div>
-        <!-- Titulo de la pagina -->
-        <h1 id="titulo" class="col-md-6 col-lg-4">PelisClasicas.com</h1>
-        <aside class="col-md-4 col-lg-6">
-          <!-- iconos de redes sociales -->
-          <section class="row justify-content-end m-2">
-            <a href="./contactanos.html">
-              <img
-                src="../imagenes/correo.png"
-                alt="formulario de contacto"
-                class="rounded-lg m-1"
-              />
-            </a>
-            <a href="https://twitter.com/tweeter?lang=es" target="_blank">
-              <img
-                src="../imagenes/twiter.png"
-                alt="ir a twitter"
-                class="rounded-lg m-1"
-              />
-            </a>
-            <a href="https://ar.pinterest.com/" target="_blank">
-              <img
-                src="../imagenes/pinterest.png"
-                alt="ir a pinterest"
-                class="rounded-lg m-1"
-              />
-            </a>
-            <a href="https://www.instagram.com/?hl=es" target="_blank">
-              <img
-                src="../imagenes/instagram.png"
-                alt="ir a instagram"
-                class="rounded-lg m-1"
-              />
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-              <img
-                src="../imagenes/facebook.png"
-                alt="ir a facebook"
-                class="rounded-lg m-1"
-              />
-            </a>
-          </section>
-          <!-- buscardor de peliculas -->
-          <section class="row justify-content-end text-right mr-2">
-            <form action="">
-              <fieldset>
-                <input
-                  class="m-1"
-                  type="text"
-                  name="buscapeli"
-                  placeholder="Nombre de la Pelicula"
-                />
-                <input class="m-1" type="submit" value="Buscar" />
-              </fieldset>
-            </form>
-          </section>
-        </aside>
+    <header
+      id="arriba"
+      class="
+        gradiente-radial
+        d-inline-flex
+        flex-wrap
+        justify-content-center justify-content-md-between
+        align-items-center
+        w-100
+      "
+    >
+      <!-- Logo de la pagina -->
+      <div class="d-none d-sm-block m-3">
+        <a href="../index.html">
+          <img id="logo" src="../imagenes/logo.png" alt="logo de la pagina" />
+        </a>
       </div>
-      <!-- Mensaje bienvenida -->
-      <p class="row justify-content-center">
-        Bienvenidos a Nuestra Pagina de Peliculas Clasicas<br />
-        Si no la tenemos, avisanos y la buscamos por vos!!!
-      </p>
+      <!-- Titulo de la pagina -->
+      <h1 id="titulo m-3">PelisClasicas.com</h1>
+      <aside class="m-3">
+        <!-- iconos de redes sociales -->
+        <section class="text-right m-1">
+          <a href="./contactanos.html">
+            <img
+              src="../imagenes/correo.png"
+              alt="formulario de contacto"
+              class="rounded-lg m-1"
+            />
+          </a>
+          <a href="https://twitter.com/tweeter?lang=es" target="_blank">
+            <img
+              src="../imagenes/twiter.png"
+              alt="ir a twitter"
+              class="rounded-lg m-1"
+            />
+          </a>
+          <a href="https://ar.pinterest.com/" target="_blank">
+            <img
+              src="../imagenes/pinterest.png"
+              alt="ir a pinterest"
+              class="rounded-lg m-1"
+            />
+          </a>
+          <a href="https://www.instagram.com/?hl=es" target="_blank">
+            <img
+              src="../imagenes/instagram.png"
+              alt="ir a instagram"
+              class="rounded-lg m-1"
+            />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img
+              src="../imagenes/facebook.png"
+              alt="ir a facebook"
+              class="rounded-lg m-1"
+            />
+          </a>
+        </section>
+        <!-- buscardor de peliculas -->
+        <section class="text-right m-1">
+          <form action="">
+            <fieldset>
+              <input
+                class="m-1"
+                type="text"
+                name="buscapeli"
+                placeholder="Nombre de la Pelicula"
+              />
+              <input class="m-1" type="submit" value="Buscar" />
+            </fieldset>
+          </form>
+        </section>
+      </aside>
     </header>
     <!-- ############## -->
     <!-- Menu principal -->
     <!-- ############## -->
-    <nav class="container-fluid navbar navbar-expand-lg fondoMenu">
-      <a class="navbar-brand botonMenu ml-2" href="#">PelisClasicas.com</a>
+    <nav class="navbar navbar-expand-lg fondoMenu">
+      <a class="navbar-brand boton-menu ml-2" href="#">PelisClasicas.com</a>
       <button
         class="navbar-toggler mr-2"
         type="button"
@@ -109,25 +124,26 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link botonMenu" href="../index.html">
+            <a class="nav-link boton-menu" href="../index.html">
               <span class="homeMenu"></span>
               <span>Inicio</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link botonMenu" href="./top-5.html">Top 5</a>
+            <a class="nav-link boton-menu" href="./top-5.html">Top 5</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link botonMenu" href="./ultima-semana.html"
-              ><span class="ultimaSemMenu"></span><span>Ultima Semana</span></a
+            <a class="nav-link boton-menu" href="./ultima-semana.html"
+              ><span class="ultimaSemMenu"></span
+              ><span class="">Ultima Semana</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link botonMenu" href="./novedades.html">Novedades</a>
+            <a class="nav-link boton-menu" href="./novedades.html">Novedades</a>
           </li>
           <li class="nav-item dropdown">
             <a
-              class="nav-link dropdown-toggle botonMenu"
+              class="nav-link dropdown-toggle boton-menu"
               href="#"
               id="navbarDropdownMenuLink"
               role="button"
@@ -153,9 +169,9 @@
     <!-- ##################### -->
     <!-- Seccion Lista General -->
     <!-- ##################### -->
-    <main id="principal" class="container-fluid ml-2 mr-2">
-      <div class="textoAlineadoDerecha"><a href="#pie">Ir abajo</a></div>      
-      <h2>Cartelera Principal</h2>
+    <main id="principal" class="ml-2 mr-2">
+      <div class="text-right fontCeleste"><a href="#pie">Ir abajo</a></div>
+      <h2>Lista General</h2>
       <table class="table">
         <!-- Encabezado -->
         <tr>
@@ -172,139 +188,144 @@
           <th>Protagonistas</th>
         </tr>
         <!-- Fila 1 -->
-        <tr class="azul">
+        <tr>
           <td>1</td>
           <td>
             <a href="./beetlejuice.html">
               <img
                 src="../imagenes/beetlejuice_el_super_fantasma-898353028-206x300.jpg"
                 alt="imagen de lapelicula BeetleJuice"
-              /> 
+              />
             </a>
-            <h3 class="tituloPeliculas">BeetleJuice</h3>
           </td>
-          <td>BeetleJuice</td>
-          <td>Ciencia ficción</td>
-          <td>1988</td>
-          <td>93 Minutos</td>
-          <td>Estados Unidos</td>
-          <td>Tim Burton</td>
+          <td><h3 class="titulo-pelicula">BeetleJuice</h3></td>
+          <td><p>Ciencia ficción</p></td>
+          <td><p>1988</p></td>
+          <td><p>93 Minutos</p></td>
+          <td><p>Estados Unidos</p></td>
+          <td><p>Tim Burton</p></td>
           <td>
             <ul>
               <li>Michael McDowell</li>
               <li>Warren Skaaren</li>
             </ul>
           </td>
-          <td>Danny Elfman</td>
+          <td><p>Danny Elfman</p></td>
           <td>
-            <ul>
-              <li class="d-inline-flex p-2 bd-highlight">Michael Keaton</li>
-              <li class="d-inline-flex p-2 bd-highlight">Alec Baldwin</li>
-              <li class="d-inline-flex p-2 bd-highlight">Geena Davis</li>
-              <li class="d-inline-flex p-2 bd-highlight">Winona Ryder</li>
-              <li class="d-inline-flex p-2 bd-highlight">Jeffrey Jones</li>
-              <li class="d-inline-flex p-2 bd-highlight">Annie McEnroe</li>
-              <li class="d-inline-flex p-2 bd-highlight">Sylvia Sidney</li>
-              <li class="d-inline-flex p-2 bd-highlight">Glenn Shadix</li>
-              <li class="d-inline-flex p-2 bd-highlight">Catherine O'Hara</li>
-              <li class="d-inline-flex p-2 bd-highlight">Hugo Stanger</li>
-              <li class="d-inline-flex p-2 bd-highlight">Mark Ettlinger</li>
-              <li class="d-inline-flex p-2 bd-highlight">J. Jay Saunders</li>
-              <li class="d-inline-flex p-2 bd-highlight">Patrice Martinez</li>
-              <li class="d-inline-flex p-2 bd-highlight">Carmen Filpi</li>
-              <li class="d-inline-flex p-2 bd-highlight">Douglas Turner Ward</li>
-              <li class="d-inline-flex p-2 bd-highlight">Simmy Bow</li>
-              <li class="d-inline-flex p-2 bd-highlight">Cindy Daly</li>
-              <li class="d-inline-flex p-2 bd-highlight">Maree Cheatham</li>
-              <li class="d-inline-flex p-2 bd-highlight">Duane Davis</li>
-              <li class="d-inline-flex p-2 bd-highlight">Tony Cox</li>
-              <li class="d-inline-flex p-2 bd-highlight">Dick Cavett</li>
-              <li class="d-inline-flex p-2 bd-highlight">Robert Goulet</li>
-              <li class="d-inline-flex p-2 bd-highlight">Gary Jochimsen</li>
-              <li class="d-inline-flex p-2 bd-highlight">Adelle Lutz</li>
-              <li class="d-inline-flex p-2 bd-highlight">Susan Kellermann</li>
-            </ul>
+            <div>
+              <ul>
+                <li>Michael Keaton</li>
+                <li>Alec Baldwin</li>
+                <li>Geena Davis</li>
+                <li>Winona Ryder</li>
+                <li>Jeffrey Jones</li>
+                <li>Annie McEnroe</li>
+                <li>Sylvia Sidney</li>
+                <li>Glenn Shadix</li>
+                <li>Catherine O'Hara</li>
+                <li>Hugo Stanger</li>
+                <li>Mark Ettlinger</li>
+                <li>J. Jay Saunders</li>
+                <li>Patrice Martinez</li>
+                <li>Carmen Filpi</li>
+                <li>Douglas Turner Ward</li>
+                <li>Simmy Bow</li>
+                <li>Cindy Daly</li>
+                <li>Maree Cheatham</li>
+                <li>Duane Davis</li>
+                <li>Tony Cox</li>
+                <li>Dick Cavett</li>
+                <li>Robert Goulet</li>
+                <li>Gary Jochimsen</li>
+                <li>Adelle Lutz</li>
+                <li>Susan Kellermann</li>
+              </ul>
+            </div>
           </td>
         </tr>
         <!-- Fila 2 -->
-        <tr class="azul">
+        <tr>
           <td>2</td>
           <td>
-          <a href="./hechizo_del_tiempo.html">
-            <img
-              src="../imagenes/hechizo_del_tiempo-111669822-206x302.jpg"
-              alt="imagen de la pelicula hechizo del tiempo"
-            /> </a
-          ><h3 class="tituloPeliculas">Hechizo del Tiempo<h3>
+            <a href="./hechizo_del_tiempo.html">
+              <img
+                src="../imagenes/hechizo_del_tiempo-111669822-206x302.jpg"
+                alt="imagen de la pelicula hechizo del tiempo"
+              />
+            </a>
           </td>
-          <td>Groundhog Day</td>
-          <td>Romance</td>
-          <td>1993</td>
-          <td>101 Minutos</td>
-          <td>Estados Unidos</td>
-          <td>Harold Ramis</td>
+          <td><h3 class="titulo-pelicula">Groundhog Day</h3></td>
+          <td><p>Romance</p></td>
+          <td><p>1993</p></td>
+          <td><p>101 Minutos</p></td>
+          <td><p>Estados Unidos</p></td>
+          <td><p>Harold Ramis</p></td>
           <td>
             <ul>
               <li>Danny Rubin</li>
               <li>Harold Ramis</li>
             </ul>
           </td>
-          <td>George Fenton</td>
+          <td><p>George Fenton</p></td>
           <td>
-            <ul>
-              <li class="d-inline-flex p-2 bd-highlight">Bill Murray</li>
-              <li class="d-inline-flex p-2 bd-highlight">Andie MacDowell</li>
-              <li class="d-inline-flex p-2 bd-highlight">Chris Elliott</li>
-              <li class="d-inline-flex p-2 bd-highlight">Stephen Tobolowsky</li>
-              <li class="d-inline-flex p-2 bd-highlight">Angela Paton</li>
-              <li class="d-inline-flex p-2 bd-highlight">Rick Overton</li>
-              <li class="d-inline-flex p-2 bd-highlight">Brian Doyle-Murray</li>
-              <li class="d-inline-flex p-2 bd-highlight">Marita Geraghty</li>
-              <li class="d-inline-flex p-2 bd-highlight">Rick Ducommun</li>
-              <li class="d-inline-flex p-2 bd-highlight">Harold Ramis</li>
-              <li class="d-inline-flex p-2 bd-highlight">Rod Sell</li>
-              <li class="d-inline-flex p-2 bd-highlight">Michael Shannon</li>
-              <li class="d-inline-flex p-2 bd-highlight">Peggy Roeder</li>
-              <li class="d-inline-flex p-2 bd-highlight">Les Podewell</li>
-              <li class="d-inline-flex p-2 bd-highlight">Robin Duke</li>
-            </ul>
+            <div>
+              <ul>
+                <li>Bill Murray</li>
+                <li>Andie MacDowell</li>
+                <li>Chris Elliott</li>
+                <li>Stephen Tobolowsky</li>
+                <li>Angela Paton</li>
+                <li>Rick Overton</li>
+                <li>Brian Doyle-Murray</li>
+                <li>Marita Geraghty</li>
+                <li>Rick Ducommun</li>
+                <li>Harold Ramis</li>
+                <li>Rod Sell</li>
+                <li>Michael Shannon</li>
+                <li>Peggy Roeder</li>
+                <li>Les Podewell</li>
+                <li>Robin Duke</li>
+              </ul>
+            </div>
           </td>
         </tr>
         <!-- Fila 3 -->
-        <tr class="azul">
+        <tr>
           <td>3</td>
           <td>
             <a href="">
               <img
                 src="../imagenes/los_cazafantasmas-708072042-206x300.jpg"
                 alt="imagen de la pelicula los cazafantasmas"
-              /> </a>
-            <h3 class="tituloPeliculas">Los Cazafantasmas</h3>
+              />
+            </a>
           </td>
-          <td>Ghostbusters</td>
-          <td>Ciencia ficción</td>
-          <td>1984</td>
-          <td>120 Minutos</td>
-          <td>Estados Unidos</td>
-          <td>Ivan Reitman</td>
-          <td >
+          <td><h3 class="titulo-pelicula">Ghostbusters</h3></td>
+          <td><p>Ciencia ficción</p></td>
+          <td><p>1984</p></td>
+          <td><p>120 Minutos</p></td>
+          <td><p>Estados Unidos</p></td>
+          <td><p>Ivan Reitman</p></td>
+          <td>
             <ul>
               <li>Dan Aykroyd</li>
               <li>Harold Ramis</li>
             </ul>
           </td>
-          <td>Elmer Bernstein</td>
-          <td >
-            <ul>
-              <li class="d-inline-flex p-2 bd-highlight">Bill Murray</li>
-              <li class="d-inline-flex p-2 bd-highlight">Dan Aykroyd</li>
-              <li class="d-inline-flex p-2 bd-highlight">Sigourney Weaver</li>
-              <li class="d-inline-flex p-2 bd-highlight">Ramis</li>
-              <li class="d-inline-flex p-2 bd-highlight">Rick Moranis</li>
-              <li class="d-inline-flex p-2 bd-highlight">Annie Potts</li>
-              <li class="d-inline-flex p-2 bd-highlight">William Atherton</li>
-              <li class="d-inline-flex p-2 bd-highlight">Ernie Hudson</li>
-            </ul>
+          <td><p>Elmer Bernstein</p></td>
+          <td>
+            <div>
+              <ul>
+                <li>Bill Murray</li>
+                <li>Dan Aykroyd</li>
+                <li>Sigourney Weaver</li>
+                <li>Ramis</li>
+                <li>Rick Moranis</li>
+                <li>Annie Potts</li>
+                <li>William Atherton</li>
+                <li>Ernie Hudson</li>
+              </ul>
+            </div>
           </td>
         </tr>
       </table>
@@ -315,30 +336,31 @@
     <footer id="pie" class="container-fluid">
       <div id="pie1renglon" class="row">
         <nav class="navbar navbar-expand-lg fondoMenu col-12">
-          <a class="navbar-brand botonMenu" href="#"
+          <a class="navbar-brand boton-menu" href="#"
             >PelisClasicas.com copyright 2021c</a
           >
           <ul class="navbar-nav w-100 justify-content-end">
             <li class="nav-item">
-              <a class="nav-link botonMenu" href="./quienes-somos.html"
+              <a class="nav-link boton-menu" href="./quienes-somos.html"
                 >Quienes Somos <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link botonMenu" href="./contactanos.html"
+              <a class="nav-link boton-menu" href="./paginas/contactanos.html"
                 >Contactanos</a
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link botonMenu" href="./ayuda.html">Ayuda</a>
             </li>
           </ul>
         </nav>
       </div>
-      <div id="pie2renglon" class="row">
+      <div id="pie2renglon" class="row fuente-celeste">
         <ul class="col-12 text-center">
-          <li class="d-inline"><a href="#arriba">Ir arriba</a></li>
-          <li class="d-inline"><a href="../index.html">Volver al Inicio</a></li>
+          <li class="d-inline">
+            <a href="#arriba">Ir arriba</a>
+          </li>
+          <li class="d-inline">
+            <a href="../index.html">Volver al Inicio</a>
+          </li>
         </ul>
       </div>
     </footer>

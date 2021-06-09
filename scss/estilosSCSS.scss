@@ -1,3 +1,5 @@
+@import "colores";
+@import "tipografia";
 @import "genericas";
 @import "efectos";
 @import "header";
@@ -5,36 +7,12 @@
 @import "main";
 @import "footer";
 @import "tabla";
+@import "contacto";
 @import "mediaquery";
-@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-
-/**************************************/
-/* MODIFICO FORMATO CARD DEL CARROUSEL*/
-/**************************************/
-
-.card-body {
-  padding: 0.75rem;
-  background-color: rgb(226, 224, 224);
-}
 
 /********************************************/
 /* FORMATO A TITULOS Y DETALLES DE PELICULAS*/
 /********************************************/
-
-.tituloPeliculas {
-  color: rgb(248, 214, 220);
-  font-size: 120%;
-  font-weight: 400;
-  height: 1.5em;
-  width: 206px;
-  margin-top: 6px;
-  border-radius: 6px;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-}
 
 .tituloPeliculas--azul {
   color: blue;
@@ -48,10 +26,12 @@
 }
 
 /*da formato al texto del detalle de las peliculas*/
-.datosPelicula {
+.datos-pelicula {
+  background-color: rgb(250, 228, 200);
   color: rgb(40, 103, 155);
   font-family: "Saira Extra Condensed";
   padding: 5px;
+  border-radius: 6px;
 }
 
 /*****************************************/
@@ -62,7 +42,9 @@
   align-self: center;
   border: 3px dotted red;
   margin: 10px;
+  position: relative;
   img {
+    border-radius: 6px 6px 0 0;
     width: 205px;
     height: 304px;
   }

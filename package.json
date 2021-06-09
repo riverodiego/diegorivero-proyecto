@@ -1,7 +1,7 @@
 {
-  "name": "diegorivero-desafio11",
+  "name": "proyecto_Web_Peliculas_Clasicas",
   "version": "1.0.0",
-  "description": "",
+  "description": "Trata de una pagina de peliculas clasicas y su contenido estilo blog",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

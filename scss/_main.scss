@@ -3,15 +3,7 @@
 //*      Formatea el MAIN            */
 //************************************/
 
-main {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-main h2 {
-  margin: 5px;
-  text-align: center;
-}
+/*de top 5 y ultima semana*/
 
 main div.cartelera {
   display: flex;
@@ -19,41 +11,99 @@ main div.cartelera {
   background-color: black;
 }
 
-main section article {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 10px;
-  margin: 5px;
-  border: purple 3px solid;
-  justify-content: center;
+.tarjeta-pelicula {
+  background-color: $pelicula-fondo-color;
+  border: white 1px solid;
+  border-radius: 6px;
+  max-width: 270px;
+  max-height: 820px;
+  text-align: center;
 }
 
-main section h3,
-.card-title,
-.tituloPeliculas {
-  background-color: rgb(148, 50, 148);
+.titulo-pelicula {
+  display: flex;
+  background-color: rgba(128, 0, 128, 0.5);
   color: white;
   text-align: center;
-  border-radius: 6px;
-  padding: 3px;
+  border-radius: 0 0 6px 6px;
+  padding: 0.25rem;
+  height: 79.5px;
+  width: 205px;
+  align-items: center;
+  justify-content: center;
+  font: $pelicula-titulo-fuente;
 }
 
-main section h4 {
-  margin: 10px;
+.titulo-pelicula-principal {
+  @extend .titulo-pelicula;
+  width: 241px;
+  margin-left: 9px;
+}
+
+.titulo-personal {
+  @extend .titulo-pelicula;
+  width: 141px;
+  margin-left: 9px;
+  background-color: rgba(88, 90, 238, 0.5);
+}
+
+.fecha-pelicula {
+  background: none 0 0 repeat scroll rgba(255, 165, 0, 0.5);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  font-family: Arial, Verdana, sans-serif;
+  padding: 1px 4px 2px 2px;
+  text-shadow: 2px 2px 0 #000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  margin: 20px 0 0 0;
+}
+
+.cartel-pelicula {
+  @extend .fecha-pelicula;
+  background: none 0 0 repeat scroll rgba(15, 226, 241, 0.5);
+  margin: 0 0 0 20%;
+  font-size: 2rem;
 }
 
 main section article img {
   width: 247px;
   height: 364px;
+  padding: 3px;
 }
 
-.comentarioPelicula {
-  flex: 1;
-  font-size: medium;
-  line-height: 1.5em;
+.comentario-pelicula {
   padding: 5px;
+  font: $pelicula-sinopsis-fuente;
+  text-indent: $texto-indentado;
+  background-color: rgb(203, 234, 243);
+  width: 90%;
+  border-radius: 6px;
+  margin: 15px;
 }
 
 .cartelera {
   justify-content: space-around;
+}
+
+.caja-pelicula {
+  -webkit-box-shadow: 12px 13px 12px 2px rgba(0, 0, 0, 0.98);
+  box-shadow: 12px 13px 12px 2px rgba(0, 0, 0, 0.98);
+  background: #fcfcfc;
+}
+
+.info-pelicula-200 {
+  max-width: 200px;
+}
+
+.img-pelicula-250 {
+  max-width: 250px;
+}
+
+.caja-presentacion {
+  -webkit-box-shadow: 12px 13px 12px 2px rgba(0, 0, 0, 0.98);
+  box-shadow: 12px 13px 12px 2px rgba(0, 0, 0, 0.98);
+  background: rgb(214, 211, 211);
 }
