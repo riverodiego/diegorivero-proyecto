@@ -338,7 +338,7 @@ main div.cartelera {
   border: white 1px solid;
   border-radius: 6px;
   max-width: 270px;
-  max-height: 820px;
+  max-height: max-content;
   text-align: center; }
 
 .titulo-pelicula, .titulo-pelicula-principal, .titulo-personal {
@@ -482,7 +482,7 @@ form fieldset label {
     margin-top: 29px; } }
 
 /*Esconder caja de texto muy pequeñas*/
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 343.98px) {
   .d-ocultar-chico,
   .d-ocultar-medio {
     display: none; }
@@ -493,30 +493,38 @@ form fieldset label {
     font-size: 0.7rem; }
   .img-carousel-tam {
     max-width: 90vw;
-    max-height: 95vh; } }
+    max-height: 95vh; }
+  .titulo-pelicula-principal, .titulo-pelicula, .titulo-pelicula-principal, .titulo-personal {
+    max-width: 70vw;
+    max-height: 70vh;
+    margin-left: 0; }
+  iframe {
+    max-width: 250px;
+    max-height: 150px; } }
 
-@media (min-width: 301px) and (max-width: 575px) {
+@media (min-width: 344px) and (max-width: 575.98px) {
   .d-ocultar-medio {
-    display: none; } }
-
-@media (min-width: 301px) {
+    display: none; }
   .fuente-404 {
     font-size: 2rem; }
   .img-carousel-tam {
     max-width: 80vw;
-    max-height: 90vh; } }
-
-@media (min-width: 576px) {
+    max-height: 90vh; }
   iframe {
     max-width: 300px;
-    max-height: 200px; }
+    max-height: 200px; } }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  iframe {
+    max-width: 350px;
+    max-height: 250px; }
   .fuente-404 {
     font-size: 2rem; }
   .img-carousel-tam {
     max-width: 75vw;
     max-height: 85vh; } }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   iframe {
     max-width: 400px;
     max-height: 300px; }
@@ -526,7 +534,7 @@ form fieldset label {
     max-width: 70vw;
     max-height: 80vh; } }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
   iframe {
     max-width: 450px;
     max-height: 350px; }
